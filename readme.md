@@ -5,10 +5,6 @@
 使用Vue构建一个基本包
 
 ```Bash
-npm create vite@latest
-
-cd 项目名
-
 npm install
 
 npm run dev
