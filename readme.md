@@ -4,10 +4,18 @@
 
 使用Vue构建一个基本包
 
+Frontend
 ```Bash
 npm install
 
 npm run dev
+```
+
+Backend
+```Bash
+pip install -r requirements.txt
+
+uvicorn executed:app --host 0.0.0.0 --port 8326 --reload
 ```
 
 围绕三个核心控制点：对话框、侧边栏和开始提示语

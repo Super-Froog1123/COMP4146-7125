@@ -30,9 +30,9 @@ const errorMessage = ref('');
 const conversationCounter = ref(1);
 
 const suggestionList = [
-  '帮我规划一个 3 天周末旅行',
-  '解释一下 Vue 3 Composition API 的核心概念',
-  '给我一个前端性能优化的检查清单'
+  "ITM's teaching syllabus",
+  "Course requirements for COMP7125",
+  "COMP7125 Exam Time"
 ];
 
 const activeConversation = computed(() => {
@@ -217,11 +217,11 @@ async function handleSendMessage(content) {
     if (targetConversation) {
       pushMessage(targetConversation, {
         role: 'assistant',
-        content: '抱歉，这次回复失败了，请重试。',
+        content: 'Sorry, the response failed this time. Please try again.',
         status: 'error'
       });
     }
-    errorMessage.value = '回复失败，请稍后重试。';
+    errorMessage.value = 'Reply failed, please try again later.';
   } finally {
     loading.value = false;
   }

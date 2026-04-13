@@ -1,7 +1,7 @@
 <template>
   <section class="welcome">
-    <h1>欢迎使用 ChatBot Demo</h1>
-    <p>这是一个前端聊天骨架。你可以从下面的问题开始，或直接输入你的问题。</p>
+    <h1>Hello! I'm your HKBU Study Companion</h1>
+    <p>You can start with the following question, or enter your question directly.</p>
 
     <div class="suggestion-list">
       <button

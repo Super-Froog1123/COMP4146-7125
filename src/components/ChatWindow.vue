@@ -2,7 +2,7 @@
   <section class="chat-window">
     <header class="chat-header">
       <h2>{{ conversation?.title || '新对话' }}</h2>
-      <span v-if="loading" class="loading">机器人正在输入...</span>
+      <span v-if="loading" class="loading">...</span>
     </header>
 
     <div ref="messageContainerRef" class="message-container">
@@ -31,11 +31,11 @@
       <textarea
         v-model="draft"
         class="input"
-        placeholder="输入内容，Enter 发送，Shift + Enter 换行"
+        placeholder="Input content, Click Enter to send, Shift + Enter to line break"
         rows="2"
         @keydown.enter.exact.prevent="onSend"
       />
-      <button type="submit" class="send-btn" :disabled="sendDisabled">发送</button>
+      <button type="submit" class="send-btn" :disabled="sendDisabled">Send</button>
     </form>
   </section>
 </template>

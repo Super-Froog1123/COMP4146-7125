@@ -1,8 +1,8 @@
 <template>
   <aside class="sidebar">
     <div class="sidebar-header">
-      <h2>会话列表</h2>
-      <button class="new-btn" type="button" @click="$emit('create')">+ 新建</button>
+      <h2>Conversations</h2>
+      <button class="new-btn" type="button" @click="$emit('create')">+ Add</button>
     </div>
 
     <ul class="conversation-list">
@@ -20,10 +20,10 @@
         <button
           class="delete-btn"
           type="button"
-          title="删除会话"
+          title="Delete conversation"
           @click.stop="$emit('remove', conversation.id)"
         >
-          删除
+          Delete
         </button>
       </li>
     </ul>
