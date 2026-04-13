@@ -44,10 +44,8 @@ def complete_document(prefix: str):
         }
     }
     try:
-        # 流式请求 Ollama
         with requests.post(OLLAMA_URL, json=payload, stream=True, timeout=120) as r:
             r.raise_for_status()
-            # 逐字返回
             for chunk in r.iter_lines():
                 if chunk:
                     data = json.loads(chunk)
@@ -63,11 +61,11 @@ def complete_document(prefix: str):
 @app.post("/ask")
 def ask(q: Query):
     prompt = build_prompt(q.context, q.question)
-    # 返回 StreamingResponse = 打字机效果
     return StreamingResponse(
         complete_document(prompt),
         media_type="text/plain; charset=utf-8"
     )
+    
 
 print("✅ Backend Address: http://localhost:8326")
 print("✅ Backend Document: http://localhost:8326/docs")
