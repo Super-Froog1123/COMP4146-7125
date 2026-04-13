@@ -1,0 +1,947 @@
+[
+  {
+    "text": "1 \n \nTitle (Units): COMP7025 Artificial Intelligence for Digital Transformation (3,2,1) \n \nCourse Aims: To help students gain understanding of artificial intelligence (AI) and generative AI \nas essential tools in pursuing the digital transformation journey, through the \ndiscussion of AI basics, applications, and tools with use cases in various areas of an \nenterprise including sales and marketing, customer service, operations, risk",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 1
+  },
+  {
+    "text": "nd marketing, customer service, operations, risk \nmanagement and other support functions. While applications of modern AI \ntechnologies and AI -generated content in different sectors will be explored, those \nfor the banking industry will be highlighted. Students will also look at the issues and \nchallenges of adopting AI technologies and generative AI methods in addition to \ntheir benefits and learn the implementation aspect of digital transformation. This",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 1
+  },
+  {
+    "text": "mentation aspect of digital transformation. This \ncourse is designed to prepare students to take part in digital transformation projects \ninvolving AI and generative AI technologies in different roles such as a business \nuser, solution analyst, project manager, and AI solution provider. \n \n \nPrerequisite: Nil \n \n \nCourse Intended Learning Outcomes (CILOs): \nUpon successful completion of this course, students should be able to: \n \nNo. Course Intended Learning Outcomes (CILOs) \n Knowledge",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 1
+  },
+  {
+    "text": "e Intended Learning Outcomes (CILOs) \n Knowledge \n1 Explain the basics, applications and tools of artificial intelligence and AI-generated content \n2 Describe the essence of digital transformation concepts and approach, and organizational readiness \nfor adopting AI technologies \n3 Relate the real-life use cases and the related AI solutions \n4 Recognize the ethical, compliance, and potential risks associated with generative AI \n Professional Skill",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 1
+  },
+  {
+    "text": "sociated with generative AI \n Professional Skill \n5 Perform different professional roles in AI transformation projects from different perspectives \n6 Analyze and plan the readiness to adopt AI technologies in a digital transformation journey \n7 Identify and recommend AI solutions for business transformation \n8 Implement effective prompt engineering to utilize generative AI \n \n \nCalendar Description: Students will gain the understanding of artificial intelligence (AI) and generative",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 1
+  },
+  {
+    "text": "g of artificial intelligence (AI) and generative \nAI as the essential technology in pursuing the digital transformation journey, \nthrough the discussion of AI basics, applications, and tools with use cases in various \nfunctions of an enterprise including sales and marketing, customer service, \noperations, risk management and other support functions. While applications of \nmodern AI technologies and AI -generated content in different sectors will be",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 1
+  },
+  {
+    "text": "-generated content in different sectors will be \nexplored, those for the banking industry will be highlighted. Students will also look \nat the issues and challenges of adopting AI technologies and generative AI in \naddition to their benefits and learn the implementation aspect of digital \ntransformation. This course is designed to prepare students to take part in digital \ntransformation projects involving AI and generative AI technologies in different",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 1
+  },
+  {
+    "text": "g AI and generative AI technologies in different \nroles such as a business user, solution analyst, project manager , and AI solution \nprovider. \n \n \nTeaching and Learning Activities (TLAs): \n \nCILOs Type of TLA \n1,2 Lectures, mini-project, class presentation, or assignments \n3,4,8 Lectures, video presentation / live demonstration / hands-on experience of AI solutions \n5 Lectures, exercises, assignments, problem-solving assignments, or mini-project",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 1
+  },
+  {
+    "text": "ts, problem-solving assignments, or mini-project \n6,7 Lectures, exercises, hands-on assignments, independent information search, and research as \nrequired by the mini-project.",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 1
+  },
+  {
+    "text": "2 \n \nAssessment: \n \nNo. Assessment \nMethods \nWeighting CILOs to be \naddressed \nDescription of Assessment Tasks \n1 Continuous \nAssessment \n70% 1-8 This may include a mid-term test, written and hands-\non assignments, and mini -project. The test will be \nused to assess the students’ understanding and \napplication of the artificial intelligence under the \ndigital transformation context and is related \nprimarily to learning outcomes 1 -4. The written",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 2
+  },
+  {
+    "text": "primarily to learning outcomes 1 -4. The written \nassignments are designed to assess the students’ \nmastery of the methods and applications of artificial \nintelligence technologies and are related mainly to \nlearning outcomes 1 and 2. The hands-on problem-\nsolving assignment and mini-project are designed to \nachieve learning outcomes 4-8 by requiring students \nto work in a team environment to address digital \ntransformation scenarios through the application of",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 2
+  },
+  {
+    "text": "nsformation scenarios through the application of \nthe concepts and approach learned. \n 2 Examination 30% 1-8 The final examination is designed to measure the \nextent to which the students have reached all of the \nlearning outcomes. Students are required to have a \ngood mastery of the concepts, methods, and \napplications of artificial intelligence for digital \ntransformation as well as addressing business \nsituations and problems. \n \n \nAssessment Rubrics:",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 2
+  },
+  {
+    "text": "uations and problems. \n \n \nAssessment Rubrics: \n \nExcellent (A) • Achieves all eight CILOs, demonstrating a good mastery of both the theoretical and \npractical aspects of the knowledge and skills associated with artificial intelligence \n• Demonstrates a thorough understanding and solid knowledge of digital transformation \n• Able to draw on a variety of artificial intelligence technologies and relevant \nknowledge and appropriately apply them to challenging digital transformation \nscenarios",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 2
+  },
+  {
+    "text": "to challenging digital transformation \nscenarios \nGood (B) • Achieves all eight CILOs, demonstrating a good understanding of the associated \nconcepts and underlying technologies of artificial intelligence \n• Demonstrates a competent level of knowledge of digital transformation \n• Ability to make use of appropriate artificial intelligence technologies and knowledge \nand apply them to familiar digital transformation scenarios",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 2
+  },
+  {
+    "text": "hem to familiar digital transformation scenarios \nSatisfactory (C) • Achieves most of the eight CILOs, demonstrating a basic level of understanding of \nthe associated concepts and underlying technologies of artificial intelligence \n• Demonstrates an adequate level of knowledge of digital transformation \n• Ability to make use of some artificial intelligence technologies and knowledge and \napply them to familiar digital transformation scenarios",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 2
+  },
+  {
+    "text": "hem to familiar digital transformation scenarios \nFail (F) • Achieves less than three of the eight CILOs, with little understanding of the associated \nconcepts and underlying technologies of artificial intelligence \n• Knowledge of digital transformation falling below the basic minimum level \n• Unable to apply artificial intelligence technologies and knowledge to digital \ntransformation scenarios \n \n \n \n \n \nCourse Content and CILOs Mapping: \nContent CILO No. Hours",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 2
+  },
+  {
+    "text": "3 \n \n \n \nReferences: \n• Danny Samson, Alon Ellis, Stuart Black, Business Model Transformation - The AI & Cloud Technology \nRevolution, Routledge, 2023. \n• Kavita Ganesan, The Business Case for AI: A Leader's Guide to AI Strategies, Best Practices & Real-World \nApplications, Opinosis Analytics Publishing, 2022. \n• Haq, Rashed, Enterprise artificial intelligence transformation: a playbook for the next generation of business \nand technology leaders, Wiley, 2020.",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 3
+  },
+  {
+    "text": "f business \nand technology leaders, Wiley, 2020. \n• Seth Earley, The AI-Powered Enterprise: Harness the Power of Ontologies to Make Your Business Smarter, \nFaster, and More Profitable, LifeTree Media, 2020. \n• Gentsch, Peter, AI in Marketing, Sales and Service: How Marketers without a Data Science Degree can use \nAI, Big Data and Bots, Palgrave Macmillan, 2019. \n• Bornet, Pascal; Barkin, Ian; Wirtz, Jochen. Intelligent Automation: Learn how to harness Artificial",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 3
+  },
+  {
+    "text": "gent Automation: Learn how to harness Artificial \nIntelligence to boost business & make our world more human, Lulu.com, 2020. \n• Evans, Nicholas D., Mastering Digital Business: How powerful combinations of disruptive technologies are \nenabling the next wave of digital transformation, BCS, The Chartered Institute for IT, 2017. \n• Sacolick, Issac, Driving Digital: The Leader ’s guide to business transformation through technology, \nAMACOM, 2017.",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 3
+  },
+  {
+    "text": "nsformation through technology, \nAMACOM, 2017. \n \n(More references will be given in class, some of which may be given as reading assignments) \n \nCourse Content: \n \nTopic \n \n \nHours \nI. The Artificial Intelligence and Digital Transformation \n \n6 \n A. Overview of artificial intelligence: concepts, methods and development \nB. AI applications and tools, and development activities at-a-glance \nC. Digital transformation under the business and Industry 4.0 context \n \n \nII. Essentials of Generative AI",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 3
+  },
+  {
+    "text": "4.0 context \n \n \nII. Essentials of Generative AI \n \n6 \n A. Overview of basic concepts of generative AI \nB. AI-assisted digital design and audio and video generation \nC. Prompt engineering in generative AI \nD. Real life use cases* \n \n \nIII. Reshaping customer experience and reengineering the corporation with AI \n \n6 \n A. Customer experience across the customer journey \nB. AI for marketing, sales and service \nC. AI for operations, risk management, and other business support functions",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 3
+  },
+  {
+    "text": "management, and other business support functions \nD. Real life use cases* \n \n \nIV. Generative AI for marketing, sales, and customer service operations \n \n6 \n A. Application of AI-generated text, images, audio, and video for marketing* \nB. Virtual sales assistants powered by generative AI \nC. Application of AI-generated content for customer service chatbots* \nD. Data privacy, ethical and compliance issues of generative AI \n \n \n \nV. Intelligence Automation \n \n3",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 3
+  },
+  {
+    "text": "rative AI \n \n \n \nV. Intelligence Automation \n \n3 \nI The Artificial Intelligence and Digital Transformation 1,2 6 \nII Essentials of Generative AI 1,3,4,8 6 \nIII Reshaping customer experience and reengineering the corporation with AI 1,2,3,7 6 \nIV Generative AI for marketing, sales, and customer service operations 1,3,4,8 6 \nV Intelligence Automation 1,2,3,7 3 \nVI Using Generative AI for Business Data Analytics 1,3,4,8 3 \nVII AI in Modern Banking 1-7 6",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 3
+  },
+  {
+    "text": "lytics 1,3,4,8 3 \nVII AI in Modern Banking 1-7 6 \nVIII Transforming the Business with AI: Strategy, Capabilities and Organization 2,5,6 3",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 3
+  },
+  {
+    "text": "4 \n \n A. Integration of artificial intelligence and robotic process automation and its \napplications \nB. Real life use cases* \n \n \nVI. Using Generative AI for Business Data Analytics \n \n3 \n A. AI-assisted code generation* \nB. Automating data analytics workflows using generative AI* \nC. Potential risks associated with AI-generated content and software codes \n \n \nVII. AI in Modern Banking \n \n6 \n A. Reshaping Banking with AI \nB. AI applications across various functions of a bank",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 4
+  },
+  {
+    "text": "applications across various functions of a bank \nC. Applications of AI-generated content in modern banking \nD. Real life use cases* \n \n \nVIII. Transforming the Business with AI: Strategy, Capabilities and Organization \n \n3 \n A. AI and transformation strategy \nB. AI capability maturity model and readiness for adoption \nC. AI and transformation project: agility and project organization \nD. Social issues, regulatory and other concerns",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 4
+  },
+  {
+    "text": ". Social issues, regulatory and other concerns \n \n* With demonstration / hands-on experience of AI solutions wherever appropriate",
+    "source": "COMP7025 Artificial Intelligence for Digital Transformation (2025.09).pdf",
+    "page": 4
+  },
+  {
+    "text": "1 \n \nTitle (Units): COMP7095 Big Data Management (3,2,1) \n \nCourse Aims: To introduce the fundamental issues of big data management; To learn the \nnumeracy skills and the latest techniques for big data management and processing; \nTo conduct application case studies to show how data management techniques \nsupport large-scale data processing. \n \nPrerequisite: Basic Knowledge in Database Concepts, Scripting and Programming. \n \nCourse Intended Learning Outcomes (CILOs):",
+    "source": "COMP7095.pdf",
+    "page": 1
+  },
+  {
+    "text": "g. \n \nCourse Intended Learning Outcomes (CILOs): \nUpon successful completion of this course, students should be able to: \n \nNo. Course Intended Learning Outcomes (CILOs) \n Knowledge \n1 Identify big data management problems and applications. \n2 Describe data management framework and methods. \n3 Describe applicability of data management applications. \n Professional Skill \n4 Suggest appropriate solutions and tools to data management problems. \n5 Analyze data management algorithms and techniques.",
+    "source": "COMP7095.pdf",
+    "page": 1
+  },
+  {
+    "text": "alyze data management algorithms and techniques. \n Attitude \n6 Work as a team to solve challenging data management problems. \n \nCalendar Description: This course aims to introduce fundamental issues of big data management and the \ncommon data management techniques and tools including streaming and I/O \nefficient algorithms, distributed computing, and NoSQL storage and processing. \nIn addition, advanced topics and an in-depth case study of Apache Spark for",
+    "source": "COMP7095.pdf",
+    "page": 1
+  },
+  {
+    "text": "s and an in-depth case study of Apache Spark for \nvarious applications on streaming, SQL, and graphs will also be covered. \nFurthermore, the potential applications of big data management to several areas \nsuch as business, finance, and so forth, are shown via examples and practices. \n \nTeaching and Learning Activities (TLAs): \n \nCILOs Type of TLA \n1-3 Students will learn the concepts and algorithms from lectures.",
+    "source": "COMP7095.pdf",
+    "page": 1
+  },
+  {
+    "text": "learn the concepts and algorithms from lectures. \n4-5 Students will learn the big data management tools and techniques via tutorials, assignments, \nand guided laboratory. \n4-6 Students will work on a group project to gain hands-on experience of big data management. \n \nAssessment: \n \nNo. Assessment \nMethods \nWeighting CILOs to be \naddressed \nDescription of Assessment Tasks \n1 Continuous \nAssessment \n40% 4-6 Assignments and Labs will be used to consolidate",
+    "source": "COMP7095.pdf",
+    "page": 1
+  },
+  {
+    "text": "Assignments and Labs will be used to consolidate \ntheir knowledge and develop their skills in data \nmanagement. Group project will further strengthen \ntheir understanding and problem-solving skills. \n2 Examination 60% 1-5 Final Examination questions are designed to \nevaluate how far students have achieved their \nintended learning outcomes. Analytics based \nquestions will be used to assess the understanding \nof big data management and processing problems.",
+    "source": "COMP7095.pdf",
+    "page": 1
+  },
+  {
+    "text": "of big data management and processing problems. \nProblem solving questions will be used to assess the \nstudents' ability in tackling applications in big data \nmanagement. \n \n \nAssessment Rubrics:",
+    "source": "COMP7095.pdf",
+    "page": 1
+  },
+  {
+    "text": "2 \n \n Excellent (A) Good (B) Satisfactory (C) Fail (F) \nIdentify and \ndistinguish the \nproblems of big \ndata management \nand analytics \nThorough \nidentification of \nalmost all \nproblems \n \nIdentification of a \nlarge number of \nproblems \nIdentification of a \nmoderate number of \nproblems \nIdentification of \nvery small number \nof problems \nDescribe big data \nmanagement \nalgorithms \nThorough \ndescription of \nalmost all big data \nmanagement \nalgorithms \nDescription of \nmost of the \nalgorithms",
+    "source": "COMP7095.pdf",
+    "page": 2
+  },
+  {
+    "text": "orithms \nDescription of \nmost of the \nalgorithms \nDescription of some \nof the algorithms \nDescription of only \na few number of \nalgorithms \nDescribe \napplicability of big \ndata management \nThorough \ndescription of \nalmost all usage of \nbig data \nmanagement \nDescription of \nmost of the usage \nDescription of some \nof the usage \nDescription \nof very small \nnumber of usage \n \nSuggest \nappropriate \nsolutions to data \nmanagement \nproblems \nSuggestion of \nalmost all correct \nsolutions",
+    "source": "COMP7095.pdf",
+    "page": 2
+  },
+  {
+    "text": "ms \nSuggestion of \nalmost all correct \nsolutions \nSuggestion of most \nof the solutions \nSuggestion of some \nof the solutions \nSuggestion of very \nsmall number of \nsolutions \nAnalyze big data \nmanagement \nmethodologies and \ntechniques \nThorough analysis \nof almost all data \nmanagement \nmethodologies and \ntechniques \nAnalysis of most \nof the \nmethodologies and \ntechniques \nAnalysis of \nsome methodologies \nalgorithms and \ntechniques \nAnalysis of very \nsmall number of \nmethodologies and",
+    "source": "COMP7095.pdf",
+    "page": 2
+  },
+  {
+    "text": "ysis of very \nsmall number of \nmethodologies and \ntechniques \n \nCourse Content and CILOs Mapping: \n \n \nReferences: \n Ghavami, Peter. “Big Data Management: Data Governance Principles for Big Data Analytics ”. Walter \nde Gruyter GmbH & Co KG, 2020.Thomas Erl,Wajid Khattak, and Paul Buhler, “Big Data Fundamentals: \nConcepts, Drivers & Techniques” (1st edition), Pearson, ISBN-13: 978-0134291079, 2016",
+    "source": "COMP7095.pdf",
+    "page": 2
+  },
+  {
+    "text": "edition), Pearson, ISBN-13: 978-0134291079, 2016 \n Li, Kuan-Ching, Hai Jiang, and Albert Y. Zomaya. “Big data management and processing”. CRC Press, \n2017. \n Miller, James D. “Big data visualization”. Packt Publishing Ltd, 2017. \n Karau, Holden, and Rachel Warren. “High performance Spark: best practices for scaling and optimizing \nApache Spark”. O'Reilly Media, Inc., 2017. \n Sandy Ryza, Uri Laserson, Sean Owen, Josh Wills, “Advanced Analytics with Spark” (2nd edition),",
+    "source": "COMP7095.pdf",
+    "page": 2
+  },
+  {
+    "text": ", “Advanced Analytics with Spark” (2nd edition), \nISBN: 9781491972908, 2017. \n \nCourse Content: \n \nTopic \n \n \n \nContent CILO No. Hours \nI Introduction to Big Data 1 2 \nII Big Data Platforms 2,3,5 7 \nIII NoSQL Storage and Processing 2,3,5 10 \nIV Big Data Summarization and Visualization 3,4,5,6 6 \nV Advanced Topics 3,4,5,6 6 \nVI An in-depth case study of Apache Spark for various applications on \nstreaming, SQL, machine learning, and graphs 3,4,5,6 8",
+    "source": "COMP7095.pdf",
+    "page": 2
+  },
+  {
+    "text": "3 \n \nI. Introduction to Big Data \n \n \n \nII. Big Data Platforms \n \n \n A. Hadoop \n Hadoop Distributed File System \n MapReduce \nB. Spark (RDD) \n \n \nIII. NoSQL Storage and Processing \n \n \n A. NoSQL Data Management: Matrix Data, Graph Data, Text \nData, and Image/Video Data Management \nB. Case studies: MongoDB \n \n \nIV. Big Data Summarization and Visualization \n \n \n \nV. Advanced Topics \n \n \n A. Streaming Algorithms and Applications \nB. Distributed Algorithms and Platforms",
+    "source": "COMP7095.pdf",
+    "page": 3
+  },
+  {
+    "text": "ons \nB. Distributed Algorithms and Platforms \n \n \nVI. An in-depth case study of Apache Spark for various applications on \nstreaming, SQL, machine learning, and graphs \n \n \n A. Spark Dataframe and Spark SQL \nB. Spark MLlib \nC. Spark Streaming \nD. Spark GraphX",
+    "source": "COMP7095.pdf",
+    "page": 3
+  },
+  {
+    "text": "COMP7115 \nDigital Experience Design\nCourse Overview\n1# commercialize#designthinking #digital #innovation#UX #UI",
+    "source": "COMP7115_L00_CourseOverview.pdf",
+    "page": 1
+  },
+  {
+    "text": "Topics to be covered\n• Introduction to Digital Experience Design\n• User-centered Design Process and Methods\n• UI/UX\n• Human-Computer Interaction\n• Design Thinking\n• Technologies for Digital Experience\n• Human-AI Interaction\n• From Design to Business Implementation - commercialize\nCourse Instructors\n• Part A - Dr. Kristen LI \n• Part B – Mr. Donald CHAN (Co-founder & Senior Advisor, Cherrypicks)\n2",
+    "source": "COMP7115_L00_CourseOverview.pdf",
+    "page": 2
+  },
+  {
+    "text": "Teaching & Learning Activities\n• Lecture, workshop, lab\n• Company Visit\n• Teamwork",
+    "source": "COMP7115_L00_CourseOverview.pdf",
+    "page": 3
+  },
+  {
+    "text": "Assessments\n▪ Workshop exercises and Individual Assignments (30%)\n▪ Group Project (30%)\n▪ Examination (40%)\nIn order to pass a course\n▪ At least 30% of the final examination mark, and\n▪ At least 35% of the overall mark\nGroup Project assessment consists of individual performance and group performance",
+    "source": "COMP7115_L00_CourseOverview.pdf",
+    "page": 4
+  },
+  {
+    "text": "1 \n \nTitle (Units): COMP7520 Foundations of Management in the IT Context (3,3,0) \n \nCourse Aims: This course aims to provide the foundation concepts of information technology \nmanagement and its impacts on organizations. By studying this course, students \nwill develop the knowledge and skills to effectively manage IT resources and \nenable digital transformation to meet business needs. Students will explore topics \nincluding strategic planning, digital business models, project management, and",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 1
+  },
+  {
+    "text": "digital business models, project management, and \nemerging technologies. \n \nPrerequisite: Nil \n \nCourse Intended Learning Outcomes (CILOs): \nUpon successful completion of this course, students should be able to: \n \nNo. Course Intended Learning Outcomes (CILOs) \n Knowledge \n1 Explain the concepts including strategic plan, outsourcing, IT service management, and legal and \nethical issues \n2 Explain the concepts of process management, and digital business models for digital transformation",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 1
+  },
+  {
+    "text": "gital business models for digital transformation \n3 Describe the emerging technologies, digital marketing, and cybersecurity management issues \n Professional Skill \n4 Apply project management techniques for IT projects \n5 Prepare capital budgeting \n6 Apply IT management techniques to solve real world problems \n \nCalendar Description: This course provides the foundation concepts in managing IT resources and \nenabling digital transformation to meet business needs.",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 1
+  },
+  {
+    "text": "digital transformation to meet business needs. \n \nTeaching and Learning Activities (TLAs): \n \nCILOs Type of TLA \n1-3 Students will attend lectures for how IT could be aligned with business objectives. Students \nwill be introduced with outsourcing practices, IT service management, and legal and ethical \nissues. Students will also learn the basic concepts for digital transformation, emerging \ntechnologies, digital marketing, and cybersecurity management issues.",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 1
+  },
+  {
+    "text": "marketing, and cybersecurity management issues. \n4-6 Students will conduct exercises on project management techniques, capital budgeting, and \napplying IT management techniques to solve real world problems. \n4-6 Students will work on a group project to analyze the problems of an organization, propose \nIT planning for it, and present the report orally. A test will assess the students’ \nunderstanding on the concepts covered in the course. \n \nAssessment: \n \nNo. Assessment \nMethods",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 1
+  },
+  {
+    "text": "ourse. \n \nAssessment: \n \nNo. Assessment \nMethods \nWeighting CILOs to be \naddressed \nDescription of Assessment Tasks \n1 Assignments 40% 1-6 Continuous assessments are designed to evaluate \nstudents’ understanding of applying the knowledge \nto manage information technologies. In particular, a \ntest will assess the students’ understanding of the IT \nmanagement concepts. \n2 Examination 60% 1-6 Final examination questions are designed to assess \nhow far students have achieved the intended",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 1
+  },
+  {
+    "text": "ess \nhow far students have achieved the intended \nlearning outcomes. Questions are designed to \nmeasure students’ ability to apply the knowledge in \ndifferent scenarios. \n \n \nAssessment Rubrics:",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 1
+  },
+  {
+    "text": "2 \n \nExcellent (A)  Achieves all six CILOs, demonstrating a good mastery of both the theoretical and \npractical aspects of the knowledge and skills associated with the IT management \nconcepts \n Able to develop and present sound arguments and correct solutions to problems in \nIT management, accompanied by in-depth analysis and insight \n Demonstrates a thorough understanding and solid knowledge of IT management",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 2
+  },
+  {
+    "text": "derstanding and solid knowledge of IT management \n Able to draw on a variety of techniques and relevant knowledge and appropriately \napply them to new IT management situations and problems \nGood (B)  Achieves all six CILOs, demonstrating a good understanding of IT management \nconcepts \n Able to develop solutions to problems in IT management, accompanied by adequate \nexplanations \n Demonstrates a competent level of knowledge of IT management",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 2
+  },
+  {
+    "text": "a competent level of knowledge of IT management \n Able to make use of appropriate techniques and knowledge and apply them to IT \nmanagement situations and problems \nSatisfactory (C)  Achieves most of the six CILOs, demonstrating a basic level of understanding of IT \nmanagement concepts \n Able to provide acceptable solutions to problems in IT management \n Demonstrates an adequate level of knowledge of IT management",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 2
+  },
+  {
+    "text": "an adequate level of knowledge of IT management \n Able to make use of some techniques and knowledge and apply them to familiar \nsituations \nFail (F)  Achieves less than three of the six CILOs, with litt le understanding of IT \nmanagement concepts \n Unable to provide solutions to simple problems in IT management \n Knowledge of concepts in IT management falling below the basic minimum level \n Unable to apply techniques and knowledge to situations or problems",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 2
+  },
+  {
+    "text": "niques and knowledge to situations or problems \n \nCourse Content and CILOs Mapping: \n \n \nReferences: \n Birgi Vogel-Heuser, and Manuel Wimmer. Digital Transformation: Core Technologies and Emerging \nTopics from a Computer Science Perspective. Springer Vieweg, 2023. \n Bob Hughes, Roger Ireland, Brian West, Norman Smith, and David I. Shepherd. Project Management for \nIT-Related Projects, 3rd Edition. Ian Borthwick, 2019.",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 2
+  },
+  {
+    "text": "ated Projects, 3rd Edition. Ian Borthwick, 2019. \n Dietmar P.F. Möller. Cybersecurity in Digital Transformation: Scope and Applications. Sp ringer, 2020. \n Erik Beulen, and Pieter M. Ribbers. Managing Information Technology Outsourcing. Routledge, 2022. \n George Baffour. Business and Emerging Technologies. Business Expert Press, 2021. \n Gopal Saxena. Strategic Managerial Accounting: A Primer for the IT Professional, Business Expert Press, \n2017.",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 2
+  },
+  {
+    "text": "e IT Professional, Business Expert Press, \n2017. \n Harold Kerzner. Innovation Project Management: Methods, Case Studies, and Tools for Managing \nInnovation Projects. John Wiley & Sons, 2022. \n Nils Urbach , and Frederik Ahlemann. IT Management in the Digital Age: A Roadmap for the IT \nDepartment of the Future, Springer, 2019. \n Paul D. Kimmel, Jerry J. Weygandt, Jill E. Mitchell. Financial Accounting for Managers. Wiley, 2023. \n Raj Sachdev. Digital Marketing. McGraw Hill, 2024.",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 2
+  },
+  {
+    "text": "j Sachdev. Digital Marketing. McGraw Hill, 2024. \n Thierry Jean Ruch. Consumerization of IT: Studies to Explore the Phenomenon and Implications for IT \nManagement, Information Security, and Organizational Structures. Cuvillier Verlag, 2017. \nContent CILO No. Hours \nI Organization Issues 1,5,6 14 \nII Digital Transformation for Business Operations 2,6 3 \nIII IT Service and Project Management 1,4,6 6 \nIV Digital Marketing 3,6 3 \nV Emerging Technologies 3,6 6 \nVI Cybersecurity Management 3,6 4",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 2
+  },
+  {
+    "text": "ologies 3,6 6 \nVI Cybersecurity Management 3,6 4 \nVII Legal and Ethical Aspects of Digital Transformation 1,6 3",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 2
+  },
+  {
+    "text": "3 \n \n Travis Wright, Brian Solis, and Chris J. Snook. Digital Sense: The Common Sense Approach to Effectivel y \nBlending Social Business Strategy, Marketing Technology, and Customer Experience, John Wiley and \nSons, 2017. \n Volker Johanning. IT Strategy: Making IT Fit for the Digital Transformation. Springer, 2022. \n \nCourse Content: \n \nTopic \n \n \n \nI. Organization Issues \n \n \n A. Management concepts in the IT context \nB. Strategic Planning \nC. Organizational Behavior",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 3
+  },
+  {
+    "text": ". Strategic Planning \nC. Organizational Behavior \nD. Business-IT Alignment \nE. Managing IT Portfolio \nF. IT Investment Evaluation such as Cost-Benefit Analysis, and \nCapital Budgeting \nG. Outsourcing \n \n \nII. Digital Transformation for Business Operations \n \n \n A. Process Management \nB. Digitalization of the Value Chain \nC. IT Performance Evaluation \nD. Digital Business Models \nE. Change Management \n \n \nIII. IT Service and Project Management \n \n \n A. Service Level Agreements",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 3
+  },
+  {
+    "text": "ect Management \n \n \n A. Service Level Agreements \nB. Project Management Methodologies \nC. Project Lifecycle Management \n \n \nIV. Digital Marketing \n \n \n A. Digital Marketing Strategies \nB. Social Media Marketing \nC. Customer Relationship Management \n \n \nV. Emerging Technologies \n \n \n A. Cloud Computing \nB. Artificial Intelligence and Machine Learning \nC. Internet of Things (IoT) \nD. Blockchain Technology \nE. Big Data and Data Warehousing \nF. Business Intelligence",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 3
+  },
+  {
+    "text": "d Data Warehousing \nF. Business Intelligence \n \n \nVI. Cybersecurity Management \n \n \n A. Fundamentals of Cybersecurity \nB. Risk Management \nC. Incident Response Planning \n \n \nVII. Legal and Ethical Aspects of Digital Transformation \n \n \n A. Intellectual Property \nB. Data Privacy \nC. Ethical Issues",
+    "source": "COMP7520 syllabui.pdf",
+    "page": 3
+  },
+  {
+    "text": "Comp7520\nFoundations of Management in the IT \nContext\nCourse Introduction",
+    "source": "Course Introduction.pdf",
+    "page": 1
+  },
+  {
+    "text": "Course Objectives\nProvide the foundation concepts of information technology \nmanagement and its impacts on organizations. \nStudents will develop the knowledge and skills to effectively manage \nIT resources and enable digital transformation to meet business \nneeds. \nStudents will explore topics including strategic planning, digital \nbusiness models, project management, and emerging technologies.",
+    "source": "Course Introduction.pdf",
+    "page": 2
+  },
+  {
+    "text": "Learning Outcomes\nNo. Course Intended Learning Outcomes (CILOs)\nKnowledge\n1 Explain the concepts including strategic plan, outsourcing, IT service management, and legal \nand ethical issues\n2 Explain the concepts of process management, and digital business models for digital \ntransformation\n3 Describe the emerging technologies, digital marketing, and cybersecurity management issues\nProfessional Skill\n4 Apply project management techniques for IT projects\n5 Prepare capital budgeting",
+    "source": "Course Introduction.pdf",
+    "page": 3
+  },
+  {
+    "text": "iques for IT projects\n5 Prepare capital budgeting\n6 Apply IT management techniques to solve real world problems",
+    "source": "Course Introduction.pdf",
+    "page": 3
+  },
+  {
+    "text": "Course Contents\n1. Organization Issues and Principles of Management\n2. Digital Transformation for Business Operations\n3. IT Service and Project Management\n4. Digital Marketing\n5. Emerging Technologies\n6. Cybersecurity Management\n7. Legal and Ethical Aspects of Digital Transformation",
+    "source": "Course Introduction.pdf",
+    "page": 4
+  },
+  {
+    "text": "Assessment Methods\nContinuous Assessment 40% \n◦ Individual assignment (15%)\n◦ Test (10%)\n◦ Group Project and Presentation (10%) \n◦ Participation (5%)\nExamination 60%\nImportant: To pass a course, students should receive at \nleast 30 marks in the final examination. AND, overall mark \nof the course should not be less than 35%.",
+    "source": "Course Introduction.pdf",
+    "page": 5
+  },
+  {
+    "text": "Avoid Plagiarism\n\"The University staunchly upholds the principles of academic integrity. \nAs one part of HKBU’s effort to prevent plagiarism, the software \nTurnitin is used to compare all assignments against multiple sources \nwhenever appropriate. A report on each assignment is generated that \nincludes a percentage similarity and links to specific similar sources. \nTurnitin does not conclusively prove whether or not an assignment is \nplagiarized – the faculty will make this determination.\"",
+    "source": "Course Introduction.pdf",
+    "page": 6
+  },
+  {
+    "text": "ized – the faculty will make this determination.\"\nhttps://ar.hkbu.edu.hk/quality-assurance/university-policy-and-\nguidelines/academic-integrity/section-2-plagiarism",
+    "source": "Course Introduction.pdf",
+    "page": 6
+  },
+  {
+    "text": "CONFIDENTIAL – For Internal Use Only \n \n \n1 \n \nPrinciples for the Use of Generative AI Tools \nin Teaching and Learning, and Assessment \n (Approved by the Senate in June 2023) \n \n1. Introduction \n \nThis document lays out the University’s principles for the use of generative AI tools in teaching \nand learning, and assessments. Generative AI is the part of Artificial Intelligence that leverages \ndeep learning models to generate human -like content, includi ng audio, code, images, text,",
+    "source": "GenAIPrinciples.pdf",
+    "page": 1
+  },
+  {
+    "text": "e content, includi ng audio, code, images, text, \nsimulations, 3D objects, and videos. Generative AI draws on data and/or the internet to generate \ntexts. It can also generate new and unexpected outputs in response to varied and complex \nprompts (e.g., languages, instructions, questions). The type and function of generative AI tools \nhave been growing rapidly. Generative AI tools can perform a growing list of tasks such as text",
+    "source": "GenAIPrinciples.pdf",
+    "page": 1
+  },
+  {
+    "text": "can perform a growing list of tasks such as text \ngeneration, idea generation, data analysis and evaluation, text summarization, translation, \nchatbot and conversational AI, sentiment analysis, text classification, paraphrasing, code \ngeneration, image generation, image captioning, music generation, and name entity recognition. \nThe potential of the technology to transform teaching and learning is enormous, m aking it",
+    "source": "GenAIPrinciples.pdf",
+    "page": 1
+  },
+  {
+    "text": "rm teaching and learning is enormous, m aking it \nnecessary for instructors and students to explore how to work with generative AI tools that can \nhave multifunctionality and engage in a multiplicity of tasks. \n \nThe implications of using generative AI tools in assessed assignment tasks, as with any tools, \nneed to be carefully considered given that these tasks are intended to demonstrate the extent to \nwhich students have mastered Course Intended Learning Outcomes (CILOs) and count towards",
+    "source": "GenAIPrinciples.pdf",
+    "page": 1
+  },
+  {
+    "text": "nded Learning Outcomes (CILOs) and count towards \nstudents’ final grades. \n \nIt is important to note that these principles are created to address the use of generative AI tools \nwithin the existing university teaching and learning ecosystem. Given the transformative \neffects of generative AI tools, there will need to be fundamental changes to teaching, learning \nand assessment across the higher education field. \n \n \n2. General Guiding Principles",
+    "source": "GenAIPrinciples.pdf",
+    "page": 1
+  },
+  {
+    "text": "tion field. \n \n \n2. General Guiding Principles \n \n1) AI- Empowering: to embrace generative AI and empower students and instructors to \nrealize the potential of generative AI tools as part of the university’s knowledge \ncreation and teaching and learning ecosystem \n \n2) AI-Critical: to encourage healthy, informed scepticism of generative AI and develop \nstudents’ and instructors’ critical thinking and awareness of the strengths, drawbacks \nand limitations of generative AI tools",
+    "source": "GenAIPrinciples.pdf",
+    "page": 1
+  },
+  {
+    "text": "wbacks \nand limitations of generative AI tools \n \n3) AI-Ethical: to maintain academic integrity, transparency and the ethical use of \ngenerative AI tools \n \n4) Build and sustain human uniqueness : to recognize the importance of students and \ninstructors as unique individuals with lived experiences, knowledge, skills and \nattributes. Provide space and time for individuals to understand and develop \nthemselves as unique individuals within the university teaching and learning \necosystem",
+    "source": "GenAIPrinciples.pdf",
+    "page": 1
+  },
+  {
+    "text": "CONFIDENTIAL – For Internal Use Only \n \n \n2 \n \n3. Use of Generative AI tools in Teaching and Learning \n \nThis section discusses actions instructors and/or students are expected to take when using \nGenerative AI tools in line with the guiding principles. \n \nGuiding \nPrinciples Use of Generative AI Tools in Teaching and Learning \nAI-\nEmpowering \n• Seek to understand how generative AI tools work and the potential of the \ntechnology to enhance and transform teaching and learning in higher",
+    "source": "GenAIPrinciples.pdf",
+    "page": 2
+  },
+  {
+    "text": "ce and transform teaching and learning in higher \neducation. For example, their potential to create personalized and engaging \nlearning experiences, provide real-time feedback to students, and support the \ndevelopment of creative and critical thinking skills. \n• Incorporate generative AI tools into teaching and learning activities. \n• Actively develop AI-literacy and competencies and equip the university \ncommunity with the skills and dispositions to be future-ready.",
+    "source": "GenAIPrinciples.pdf",
+    "page": 2
+  },
+  {
+    "text": "the skills and dispositions to be future-ready. \n• Consider how generative AI tools can support students in achieving CILOS, \nPILOs, HKBU graduate attributes and the Best Student Experience. \n• Provide access and support to generative AI tools available for teaching and \nlearning. \nAI-Critical • Raise awareness of the strengths and potentials of AI in advancing research \nand teaching and learning, as well as, the limitations, drawbacks and debates",
+    "source": "GenAIPrinciples.pdf",
+    "page": 2
+  },
+  {
+    "text": "well as, the limitations, drawbacks and debates \naround the use of generative AI, e.g. bias, inaccuracy, copyright and \nintellectual property right, privacy, ownership, commercialisation, and equity \nof access. \n• Engage in critical discussions and reflections on the use of generative AI tools. \n• Critically examine and discuss generative AI tools outputs. \n• Review privacy policies of generative AI tools, and consider the risks of",
+    "source": "GenAIPrinciples.pdf",
+    "page": 2
+  },
+  {
+    "text": "f generative AI tools, and consider the risks of \nsharing information, including those related to assessments, with the tools as \nsuch information could be used by the tool developers or their partners. \nAI-Ethical • Use AI generative tools in a way that fosters honesty and responsibility, \npromotes worthwhile global and local causes, and is conducive to learning and \ncultivation of truth. \n• Use generative AI tools transparently, including disclosure of its uses in \nsufficient detail.",
+    "source": "GenAIPrinciples.pdf",
+    "page": 2
+  },
+  {
+    "text": "ng disclosure of its uses in \nsufficient detail. \n• Raise awareness of course, programme and university expectations, policies \nand guidelines on generative AI tools. \n• Ensure that principles of equal access and fairness are applied in use of AI \ntools in the classroom setting. \n• Address issues of bias and emphasize limits on accuracy in generative AI \ntools. \nBuild and \nsustain \nhuman \nuniqueness \n• Ensure teaching and learning nurture human uniqueness, creativity, diversity",
+    "source": "GenAIPrinciples.pdf",
+    "page": 2
+  },
+  {
+    "text": "nurture human uniqueness, creativity, diversity \nof views and sharing of understandings. \n• Create an inclusive classroom environment that values diversity and fosters \npersonal growth. \n• Engage in self-reflection, seek out opportunities to learn from others with \ndifferent lived experiences. \n• Promote active participation in the university ecosystem. \n• Foster collective dialogue, problem-solving, and conflict resolution in both \ncurricular and co-curricular learning contexts.",
+    "source": "GenAIPrinciples.pdf",
+    "page": 2
+  },
+  {
+    "text": "curricular and co-curricular learning contexts. \n• Facilitate the achievement of student group experiential learning outcomes in \nsupport of engagement with community stakeholders off-campus.",
+    "source": "GenAIPrinciples.pdf",
+    "page": 2
+  },
+  {
+    "text": "CONFIDENTIAL – For Internal Use Only \n \n \n3 \n \n4. Use of Generative AI in Assessment \n \nThis section presents actions that instructors and/or students should take in relation to \nassessment in line with the guiding principles. The guiding principles are applicable to \nassignments requiring the generation of a range of output including but not limited to texts, \ncodes, images, simulations, 3D objects, audio and videos, that can be produced with assistance \nfrom generative AI tools.",
+    "source": "GenAIPrinciples.pdf",
+    "page": 3
+  },
+  {
+    "text": "ced with assistance \nfrom generative AI tools. \n \nGiven the proliferation of generative AI tools and their utility in teaching and learning, in \nalignment with our principles, the recommend ed approach is that students are allowed to \nperform the assessed assignment tasks with assistance from generative AI tools. Any such use \nmust align with the University’s academic integrity guidelines for students on academic",
+    "source": "GenAIPrinciples.pdf",
+    "page": 3
+  },
+  {
+    "text": "ic integrity guidelines for students on academic \nintegrity as well as the guidelines and instructions from the respective schools, faculties, \ndepartments and cours e instructors in order to ensure students are able to demonstrate \nachievement of PILOs and CILOs. \n \nGuiding \nPrinciples Use of Generative AI Tools in Assessments \nAI- \nEmpowering \n• Equip students with the skills and knowledge they need to use generative AI",
+    "source": "GenAIPrinciples.pdf",
+    "page": 3
+  },
+  {
+    "text": "lls and knowledge they need to use generative AI \ntools to assist them in the process of completing their assessed assignment \ntasks. \n• Encourage instructors in partnership with students to design assessed \nassignment tasks that capitalize on the capabilities of generative AI tools. \n• Promote the use of generative AI tools to enhance students' original work in \nalignment with the CILOs and PILOs. \n• Design assessed assignment tasks that capitalize on the affordances of \ngenerative AI tools.",
+    "source": "GenAIPrinciples.pdf",
+    "page": 3
+  },
+  {
+    "text": "lize on the affordances of \ngenerative AI tools. \n• Design assessments to promote the use of generative AI tools to address global \nand community issues. \nAI-Critical • Examine the strengths and potentials of AI in advancing research and teaching \nand learning, as well as, their drawbacks and limitations and consider the \nimplications of using them in the process of completing assessed assignment \ntasks. For example: \n▪ The potential inclusion of factually inaccurate information",
+    "source": "GenAIPrinciples.pdf",
+    "page": 3
+  },
+  {
+    "text": "al inclusion of factually inaccurate information \n▪ Possible bias in the output generated \n▪ Potential erosion of original ideas and viewpoints \n• Recognize that many generative AI tools are better at general knowledge \ncompared to specialist knowledge. \n• Consider the risks and controversies of the technology in connection to \ncopyright and intellectual property rights. \n• Recognize the risks of the tools creating citations, references, and other output",
+    "source": "GenAIPrinciples.pdf",
+    "page": 3
+  },
+  {
+    "text": "creating citations, references, and other output \nmight be inaccurate, false, or deceptive. \n• Verify the accuracy of responses generated by Generative AI tools using \ninformation from known reliable sources, such as those provided by the \nUniversity Library. \nAI-Ethical • Ensure transparency and uphold the fundamental values of academic integrity \nas stipulated by the University's guidelines for students on academic integrity \nwhen using Generative AI tools.",
+    "source": "GenAIPrinciples.pdf",
+    "page": 3
+  },
+  {
+    "text": "demic integrity \nwhen using Generative AI tools. \n• Acknowledge all and any use of generative AI tools in the process of \ncompleting an assessed assignment task. \n• Design assessments in such a way that generative AI is integrated in the \nlearning process while supporting students to uphold academic integrity. \n• Keep records of generative AI tool use to facilitate reflective learning. \n• Help and expect students to take responsibilities for the works submitted for \nassessment.",
+    "source": "GenAIPrinciples.pdf",
+    "page": 3
+  },
+  {
+    "text": "CONFIDENTIAL – For Internal Use Only \n \n \n4 \n \nBuild and \nsustain \nhuman \nuniqueness \n• Be aware that an overreliance on generative AI tools could reduce students’ \nopportunities to develop their own distinctive intellectual qualities. \n• Update CILOs and PILOs and develop assignment tasks that nurture human \nuniqueness, creativity, diversity of views and sharing of understandings. \n• Promote authentic assessments and tasks. \n• Incorporate formative feedback.",
+    "source": "GenAIPrinciples.pdf",
+    "page": 4
+  },
+  {
+    "text": "and tasks. \n• Incorporate formative feedback. \n \n5. Recommendations for Supporting Instructors and Students in Using \nGenerative AI \n \nIt is recognized that for the above uses to be actioned within the university community, there \nwill need to be sustained development of instructors' and students’ AI literacy. \n \nRequired action includes: \n \n• Establishing faculty and/or department-specific taskforces to establish, implement and",
+    "source": "GenAIPrinciples.pdf",
+    "page": 4
+  },
+  {
+    "text": "-specific taskforces to establish, implement and \nupdate specific guidelines for use of generative AI tools in teaching, learning and \nassessment to ensure students are able to achieve and demonstrate achievement of \nCILOs, PILOs, HKBU graduate attributes and Best Student Experience to s uit their \ndisciplinary and student learning needs. \n \nOther possible actions might include: \n \n• Develop courses and co-curricular activities and events on learning in the digital age",
+    "source": "GenAIPrinciples.pdf",
+    "page": 4
+  },
+  {
+    "text": "vities and events on learning in the digital age \nand digital and AI literacy \n• Integrate digital and AI literacy into courses and co-curricular activities \n• Provide regular and sustained staff professional development activities and training on \nAI literacy \n• Develop a repository of AI -related teaching, learning and assessment resources and \nexemplars including examples of proper and improper use of generative AI tools",
+    "source": "GenAIPrinciples.pdf",
+    "page": 4
+  },
+  {
+    "text": "f proper and improper use of generative AI tools \n• Provide university subscription to Generative AI tools for instructors, administrative \nstaff and student access \n• Create generative AI tools focused Teaching Development Grants (TDGs) \n• Organize forums, seminars and conferences on the effects of generative AI tools in \neducation and the workforce \n• Update CILOs, PILOs to reflect the future needs of students and the community \n• Develop guidelines for the ethical use of generative AI tools",
+    "source": "GenAIPrinciples.pdf",
+    "page": 4
+  },
+  {
+    "text": "lines for the ethical use of generative AI tools \n• Establish reporting mechanisms of generative AI tools use \n• Consult the wider community and HKBU alumni on the uses of generative AI tools and \nthe competences and literacies required of HKBU graduates \n \n6. Review and Update \n \nThese principles should be reviewed and updated not less than once every two years, or more \nfrequently as the need arises.",
+    "source": "GenAIPrinciples.pdf",
+    "page": 4
+  },
+  {
+    "text": "1\nHONG KONG BAPTIST UNIVERSITY\nPOLICY FOR THE ASSESSMENT OF STUDENT LEARNING\n1. Overview\n1.1 Hong Kong Baptist University acknowledges that assessment is an integral\ncomponent of student learning experience . A sound assessment policy will help\narticulate common guiding principles for all sub-degree, undergraduate, taught\npostgraduate and research postgraduate programmes in the University , however\nfunded.\n1.2 This policy specifies the basic requirements for the design, delivery and",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 1
+  },
+  {
+    "text": "e basic requirements for the design, delivery and\nmanagement of assessment and related activities. The University supports the\ndevelopment of complementary requirements by individual Faculties/Schools and\nprogrammes, provided that thos e are consistent with the guiding principles\nhighlighted in Section 3 below.The University recognizes and respects the diversity\nof disciplinary characteristics and pedagogical needs across programmes and",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 1
+  },
+  {
+    "text": "stics and pedagogical needs across programmes and\nFaculties/Schools, requiring different types of assessment and related activities. By\nthe same token, for some of the practices advocated in this policy , the\nimplementation details are left to therelevant academic units overseeing the course\nin question (Faculty/School Boards, Programme Management Committees (PMCs),\nor Departmental Assessment Committees (DACs)1, as the case may be).",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 1
+  },
+  {
+    "text": "sessment Committees (DACs)1, as the case may be).\n1.3 Reference to international practice on student assessment has been made\nin the process of drawing up this assessment policy.\n1.4 For the purpose of this policy paper, the term “ Department” is used in the\ngeneric sense to refer to the academic unitor equivalent offering a course, which is\nresponsible for teaching and thus assessment of a course, though in practice this",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 1
+  },
+  {
+    "text": "s assessment of a course, though in practice this\nunit may carry other names such as Programme, Division or Academy. Accordingly,\nthe decision-making body for assessment matters of all the courses taught by a\nDepartment is referred to in this policy paper generically as the “Departmental\nAssessment Committee” (DAC), though in certainDepartments the remit and duties\nof the DAC are taken up by the PMC. Respective roles and responsibilities of the",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 1
+  },
+  {
+    "text": "PMC. Respective roles and responsibilities of the\nparties involved in this policy are set out in Section 13 below.\n1.5 This policy paper applies to all forms of assessment, including but not limited\nto face-to-face and online assessment tasks.\n1 Renamed from the present Departmental Examination Committees.",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 1
+  },
+  {
+    "text": "2\n2. Purposes of Assessment\n2.1 Assessment serves a number of purposes, with the main ones being: –\nFor student learning:\nl the provision of feedback to students to improve their learning\n(formative);\nl the overall assessment of student learning in a course, measuring what\nstudents have achieved and not achieved (summative);\nFor teachers:\nl the upholding of academic standards, differentiation of outstanding, good\nand less well performing students , identification of student learning",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 2
+  },
+  {
+    "text": "ing students , identification of student learning\nprogress to facilitate class and curriculum planning (diagnostic); and\nl the monitoring of student learning and performance as indicator s to\ninform course effectiveness, providing useful information for teachers to\nmake self-improvement (evaluative).\n3. Guiding Principles\n3.1 Assessment should encourage and reinforce learning.\n3.2 Assessment should align with learning outcomes at both the programme and\ncourse levels.",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 2
+  },
+  {
+    "text": "outcomes at both the programme and\ncourse levels.\n3.3 Criterion-referenced assessment should be used in grading assessment\ntasks.\n3.4 Assessment must ensure that the desired academic standards of the\nprogrammes are achieved.\n3.5 Assessment should enable robust and fair judgments about student\nperformance and assessment practices must be fair and equitable to the students.\n3.6 Assessment should be continuously reviewed and adjusted based on",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 2
+  },
+  {
+    "text": "ld be continuously reviewed and adjusted based on\nstudent performance and feedback from various stakeholders.\n3.7 Assessment should serve the purposes in paragraph 2.1.\n3.8 Assessment should be authentic2 wherever appropriate, i.e. contextualized\nin relevant settings.\n2 Authentic assessment focuses on students using and applying knowledge and skills in real -life\nsettings. Ithelps students contextualize their learning and to see how real-life conditionsor situations",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 2
+  },
+  {
+    "text": "and to see how real-life conditionsor situations\naffect their theoretical knowledge (Source from: https://teaching.unsw.edu.au/authentic-\nassessment).",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 2
+  },
+  {
+    "text": "3\n4. Approaches to Assessment\n4.1 For every course, assessment tasks can take a variety of forms such as\nessay, coursework assignment, oral presentation, written test/examination,\nlaboratory report, project, dissertation, as well as equivalent online assessment\ntasks. For the purpose of student learning, each of these tasks, with the exception\nof the one conducted at the end of the course, can be taken as both formative and",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 3
+  },
+  {
+    "text": "of the course, can be taken as both formative and\nsummative – formative in that it helps a student identify strengths and weaknesses\nand thus ways for improving performance, and summative because its result\nnormally contributes tow ards the determination of the final grade for the course.\nPurposes and intended outcomes of formative and summative assessment should\nbe made clear to students in the beginning of a course.\n4.2 Assessment should gear to and be driven by the learning outcomes. Every",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 3
+  },
+  {
+    "text": "to and be driven by the learning outcomes. Every\nassessment task in a course should aim at checking one or more of the learning\noutcomes at the programme and course levels. The types of assessment should\nalso reflect the teaching and learning activities that are designed to achieve the\nlearning outcomes. Students should not be over-assessed or under-assessed. The\nlevel of a course should be reflected by the rubrics and the types of assessment\nadopted in the course.",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 3
+  },
+  {
+    "text": "nd the types of assessment\nadopted in the course.\n4.3 Assessment practices should enable teachers to measure students’ learning\nprogress at different points of a course and provide timely and effective feedback\nto students before summative assessment is conducted at the end of the course.\nTo allow sufficient formative assessment, teachers are strongly advised to keep the\ntotal weighting of all examination-type assessments in a course and any one",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 3
+  },
+  {
+    "text": "mination-type assessments in a course and any one\nassessment task at or below 40% . However, programme s may adjust their\npractices based on the assessment requirements stipulated by professional\naccreditation bodies.\n4.4 For formative purposes, the provision of timely and effective feedback to a\nstudent about his/her performance in an assessment task is crucial to his/her\nlearning. This is further discussed in Section 8 below.",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 3
+  },
+  {
+    "text": "ng. This is further discussed in Section 8 below.\n4.5 The number of assessment tasks and their scheduling should beappropriate\nfor the achievement of theCILOs of the course. In scheduling these tasks, the need\nto give timely feedback after each task must be taken into consideration. The\nweighting of an assessment task should reflect the importance of those CILOs\nwhich are being assessed by that task, the extent to which such CILOs are\nmeasured and the workload.",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 3
+  },
+  {
+    "text": "o which such CILOs are\nmeasured and the workload.\n4.6 For a course involving team teaching or with multiple teachers/sections\nincluding academic and community partners , a coordinator must be appointed to\ncollate informati on from the different teachers. Similarly for the assessment\nguidelines, as well as the weighting of each task, viz. how its result will contribute\nto the final grade of the course.",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 3
+  },
+  {
+    "text": "4\n5. Assessment Rubrics\n5.1 Assessment rubrics should bedeveloped for all major assessment tasks and\nbe included in the assessment information to begiven out to the students. They are\nmeant for promoting student engagement in the teaching and learning process\nthrough communicating to them at the outset the aims and expectations of\nassessment.\n5.2 Assessment rubrics may be generic or discipline/course specific. Therubrics\npertaining to an assessment task in a course should spell out inter alia",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 4
+  },
+  {
+    "text": "ment task in a course should spell out inter alia\nl how the particular assessment task is aligned with the CILOs.\nl the assessment criteria and standards, which must be based on the CILOs\nbeing assessed.\n6. Communication to Students\n6.1 The establishment of assessment criteria and standards upfront and making\nthem transparent to students highlights the adoption of criterion referencing in\nmarking and grading assessments.",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 4
+  },
+  {
+    "text": "n referencing in\nmarking and grading assessments.\n6.2 Information about the assessment tasks in a course, such as any submission\nprocedures and deadlines, penalty for late submission (if applicable), should be\ngiven to students as soon as practicable within the first two weeks of classes.\n6.3 The teacher of a course may choose togive, as soon as teaching has started,\nall the assessment rubrics of the course, for those students who may wish to have",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 4
+  },
+  {
+    "text": "e course, for those students who may wish to have\nearly access to such information (e.g. uploading the rubrics to a course room ofthe\nUniversity’s Learning Management System).\n6.4 Assessment tasks and their weightings should not be changed afterteaching\nin a course has started and the students have been notified. Under exceptional\ncircumstances when a change cannot be avoided, prior written approval from the\nHead of Department , who would consult with the Programme Director , must be",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 4
+  },
+  {
+    "text": "uld consult with the Programme Director , must be\nobtained as part of the quality assurance protocol;and the approved change should\nbe reported to the Faculty Board and QAC for record, and communicated to the\naffected students promptly.\n7. Grade Descriptors\n7.1 The University has established a set of generic grade descriptors for\nundergraduate courses and another set fortaught postgraduate courses, and these\nare set out in detail in the University Student Handbook at",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 4
+  },
+  {
+    "text": "t in detail in the University Student Handbook at\nhttps://ar.hkbu.edu.hk/student-services/useful-information/publications. (For\nundergraduate programmes, please select General Regulations > Undergraduate\nDegree Programme s > Assessment Grading System . Fo r taught postgraduate",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 4
+  },
+  {
+    "text": "5\nprogrammes, please select General Regulations > Professional Doctorate Degree/\nTaught Postgraduate Degree/ Diploma/ Certificate Programmes > Assessment\nGrading System)\n7.2 Grading/Assessment rubrics at the Faculty/School level as well as the\ncourse/programme level may be developed, together with course -specific grade\ndescriptors which should be consistent with the university -wide grade descriptors\nset out under paragraph 7.1.\n8. Giving Feedback to Students",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 5
+  },
+  {
+    "text": "der paragraph 7.1.\n8. Giving Feedback to Students\n8.1 Constructive and effective feedback, be it in the form of verbal, written or\nonline mode, must be provided in a timely manner to a student foreach assessment\ntask he/she has completed in a course . For the final assessment task or the\nsemester-end written examination in a course, teachers are encouraged to return\nqualitative feedback to students, either collectively or individually, to facilitate their",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 5
+  },
+  {
+    "text": "collectively or individually, to facilitate their\nlearning in future courses. As timeliness is crucial, the work submitted by a student\nfor an assessment task should be marked/graded and returned to the student with\nappropriate feedback as soon as practicable and in any case no later than three\nweeks after the deadline for submission. For some assessment tasks, the re may\nbe good reasons for requiring a longer timeframe, and prior approval for extension",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 5
+  },
+  {
+    "text": "onger timeframe, and prior approval for extension\nshould be sought from the Head of Department.\n8.2 In order to be constructive and formative, feedback should be aimed at\nfacilitating a student’s learning and assisting him/her to prepare for subsequent\nassessment tasks and improve his/her performance. The forms of assessment\nshould enable such feedback. Feedback must also be linked to the assessment\ncriteria and rubrics.\n8.3 Feedback can be delivered in many ways including but not limited to",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 5
+  },
+  {
+    "text": "livered in many ways including but not limited to\nindividual oral feedback, group discussion, individual written comments, feedback\nsheets, peer comments, descriptive annotations and suggested answers.\n9. Moderation of Assessment\n9.1 Both continuous assessment and the last assessment task may have a\nheavy weighting in the determination of the final grade for the course. Given the\nUniversity’s emphasis on ongoing assessment,every assessment task may benefit",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 5
+  },
+  {
+    "text": "oing assessment,every assessment task may benefit\nfrom peer discussion and review . In particular, those tasks carrying a heavy\nweighting toward the final grade should be moderated.\n9.2 The purpose of moderation is to enhance the validity of assessment and\nreliability between different assessors, tasks or as sessment tracks, achieve\nstandardization of grading, align interpretations of assessment rubrics, ensure\nacademic standards and differentiate different levels of standards, and address",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 5
+  },
+  {
+    "text": "ntiate different levels of standards, and address\nmarginal and/or extreme cases.",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 5
+  },
+  {
+    "text": "6\n9.3 As the final arbiter on matters related to assessment and other continuous\nassessment, th e DAC should have inter alia the authority to approve the\nassessment tasks set by the course teachers and adjust the grades they submit,\nwhen there are justifications for doing so. Efforts should be made to improve t he\nrigour of the moderation process for every course.\nl the assessment task(s) is/are in agreement with the assessment guidelines\ncommunicated to the students.",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 6
+  },
+  {
+    "text": "sessment guidelines\ncommunicated to the students.\nl the assessment task(s) can provide a fair assessment of the students which is\ncommensurate with the CILOs being assessed, in terms of the level of difficulty\nof the assessment tasks and the time allowed for completing them.\nl there are succinct assessment criteria and grade descriptors.\n9.4 As a matter of good practice, the course coordinator in charge ofdeveloping\nthe common assessment tasks and rubrics should do so in consultation with all",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 6
+  },
+  {
+    "text": "and rubrics should do so in consultation with all\nother teachers of the same course. The common assessment rubric s should be\nsufficiently detailed so as to reduce the risk of disadvantaging some students\nbecause of inconsistency among different markers.\n9.5 The final grades of the students in a course should be reported to the relevant\nDAC, which has a role in monitoring these grades and checking whether there are\napparent anomalies in any of them. Exactly what would constitute such an anomaly",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 6
+  },
+  {
+    "text": "em. Exactly what would constitute such an anomaly\nis a matter which depends on inter alia the discipline area as well as the nature of a\ncourse, and it is therefore best left to the academic judgment of the DAC concerned.\nWith that being said and as an alternative method of moderation , th e respective\ncourse coordinator/ teacher should monitor student performance in different\nassessment tasks and detect any anomalies. This arrangement c an also increase",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 6
+  },
+  {
+    "text": "ny anomalies. This arrangement c an also increase\nvalidity and reliability of various assessment tasks within a course.\n9.6 If and when there is an apparent anomaly, the course teacher/coordinator\nshould be invited to give an explanation tothe DAC, making reference to inter alia the\npublished assessment criteria and standards, the application of such criteria and\nstandards, the assessment tasks, and the grading or assessment rubrics if applicable.",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 6
+  },
+  {
+    "text": "the grading or assessment rubrics if applicable.\nIn light of this explanation, theDAC will decide whether there is a need for anyfollow-\nup action which may lead to the adjustment of some of the grades.\n9.7 There are many possibilities for this follow-up action of moderation, including\nfor instance double marking by another teacher for certain assessment task (s), a\nsample of the scripts, or only those cases considered to be marginal/borderline",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 6
+  },
+  {
+    "text": "those cases considered to be marginal/borderline\nbetween two grades. Not only for moderation purposes, double marking is an\ninternationally recognized practice that can increase the extent to which the\nassessment outcomes are fair and valid, especially for open -ended and less\nstructured assessments. The University encourages a wider application of double\nmarking, while recognizing that for some courses there are constraints due to staff\nworkload and tight deadlines.",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 6
+  },
+  {
+    "text": "raints due to staff\nworkload and tight deadlines.\n9.8 The DAC can choose the best course of action dependingon the gravity of the",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 6
+  },
+  {
+    "text": "7\nanomaly and the practicalities surrounding a case. If so warranted by the gravity of\nthe situation, the DAC may decide to seek assistance from external peers in\nconducting the double marking or pursuing other follow -up actions . The course\ncoordinator should be informed by theDAC in writing of any moderation to the course\ngrades.\n9.9 For a small number of programmes, there is external moderation of\nassessment. Departmental Academic Advisors (DAA) appointed by Departments will",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 7
+  },
+  {
+    "text": "emic Advisors (DAA) appointed by Departments will\nalso review samples of assessed student materials to ensure appropriate standards\nand fair and consistent marking.\n10. Retention of Assessed Materials\n10.1 For the purpose of facilitating internal and/or external moderation, as well as\nto allow for the need to conduct investigation in possible cases of student appeal\nagainst the final grade and/or academic misconduct, the final examination scripts",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 7
+  },
+  {
+    "text": "cademic misconduct, the final examination scripts\nof the students (and similar assessed materials when the en d-of-course\nassessment takes a form different from written examination) are retained by the\nDepartment of the course teacher/coordinator for a specified period of time. The\nretention period is six months from the deadline for receiving student appeals\nagainst the final grade.\n10.2 For the purpose of documenting evidence of student learning for various",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 7
+  },
+  {
+    "text": "umenting evidence of student learning for various\nneeds such as requests from external review panels in accreditation and/or\nAcademic Consultation Panel (ACP) exercises, some selected samples of students’\nassessed materials will be retained (in electronic formats) forlonger than sixmonths\nand up to six years . Such student materials should be de -identified to maintain\nanonymity of individual students.\n10.3 The University’s guidelines on confidentiality and personal data privacy must",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 7
+  },
+  {
+    "text": "on confidentiality and personal data privacy must\nbe observed in handling all matters regarding the storage and disposal of these\nassessed materials of the students.\n11. Academic Integrity\n11.1 The University upholds a high standard of academicintegrity and all students\nhave an obligation to understand and follow honest academic practices inpursuing\ntheir studies in the University. As far as assessment is concerned, al l work",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 7
+  },
+  {
+    "text": "ity. As far as assessment is concerned, al l work\nsubmitted for assessment by a student , irrespective of its mode of administration\nand format , is accepted on the understanding that it is the student’s own effort\nwithout falsification of any kind.\n11.2 Any case of suspected academic misconduct will be actively investigated by\nthe University, in order to safeguard the integrity and credibility of its awards and to\nensure fairness for all students. Any substantiated breach of the established",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 7
+  },
+  {
+    "text": "ents. Any substantiated breach of the established\nrequirements for academic integrity – whether intentional or due to a failure to take",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 7
+  },
+  {
+    "text": "8\nreasonable care – will result in disciplinary action being taken against those\ninvolved.\n11.3 Academic misconduct includes the following actions –\n(a) plagiarizing;\n(b) breaching the examination regulations;\n(c) inventing, deleting, or falsifying data, evidence, references, experimental\nresults or other materials which are presented in a student’s work submittedfor\nassessment;\n(d) failing to observe ethical/responsible research protocol when collecting data for\nthe honours project;",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 8
+  },
+  {
+    "text": "col when collecting data for\nthe honours project;\n(e) submitting work which has been done by another person;\n(f) impersonating another student or allowing another student to impersonate\nhim/her in an examination;\n(g) taking any other action which gives a student an improper advantagein his/her\nassessment and unduly disadvantages other students; and\n(h) collusion.\n11.4 Plagiarism is a specific and serious form of academic misconduct.",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 8
+  },
+  {
+    "text": "specific and serious form of academic misconduct.\nInformation about what constitutes plagiarism must be communicated clearly and\nmade readily available to all students at all times (https://ar.hkbu.edu.hk/quality-\nassurance/university-policy-and-guidelines/avoiding-plagiarism). Students are also\ninformed that their written assessment tasks will be checkedagainst Internet-based\nplagiarism software tools as stipulated by the University. In the context of such",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 8
+  },
+  {
+    "text": "pulated by the University. In the context of such\ninformation the course teacher should, at the start of a course, provide guidance to\nhis/her students accordingly, drawing on any course -specific requirements as\nappropriate.\n11.5 Clear guidelines regarding academic integrityand what constitutesacademic\nmisconduct must be formulated and disseminated widely to students and staff .\nSimilarly for guidelines on the procedures f or the investigation of suspected",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 8
+  },
+  {
+    "text": "he procedures f or the investigation of suspected\nacademic misconduct and the possible penalties. The AR should coordinate this\nprocess of information dissemination by collating pertinent information from other\noffices (such as the Graduate School) and providing a central point of access to\nstudents and staff.\n11.6 Course teachers should take care to minimize the opportunities foracademic\ndishonesty, when designing assessment tasks and setting the assessment",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 8
+  },
+  {
+    "text": "gning assessment tasks and setting the assessment\ntopics/questions in such a task. In that connection, it is a good practice to refrain\nfrom assigning too heavy a weight to any single assessment task of a course, as\nwell as to ensure that assessment topics/questions are regularly reviewed and to\navoid re -using the same or similar materials in recent examination papers or\nassignments. More importantly, assessment tasks and questions/topics requiring",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 8
+  },
+  {
+    "text": ", assessment tasks and questions/topics requiring\nknowledge recall are less preferred than those which aim at testing a student’s\nhigher-order cognitive abilities such as application, analysis, synthesis and\nevaluation.",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 8
+  },
+  {
+    "text": "9\n11.7 To enhance students’ awareness of academic integrity, all new students are\nrequired to complete the Academic Integrity Online Tutorial (AIOT) in the beginning\nof their study at HKBU. The AIOT provides students withinformation and strategies\nthat can be applied to avoid committing academic misconduct unintentionally. Upon\ncompletion, students have to make a declaration, confirming their understanding of\nacademic integrity and that any acts of academic misconduct may result in serious",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 9
+  },
+  {
+    "text": "acts of academic misconduct may result in serious\nconsequences.\n11.8 All members in the University have the obligation to respect ownership and\nintellectual property rights. Materials produced by teachers, students and other\npeople involved in the course , including the recorded lectures , are protected by\ncopyright. One must not share, in any formats, such materials within and outside\nthe University for any purposes without permission and authorization from the",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 9
+  },
+  {
+    "text": "ses without permission and authorization from the\nrespective teacher/students/parties.\n12. Mitigation and Review\n12.1 A student who is prevented from completing an assessment task by\nextenuating circumstances beyond his/her own control must be given the\nopportunity to seek mitigation, in accordance with established procedural guidelines\n(https://handbook.ar.hkbu.edu.hk/).\n12.2 A student with Special Educational Needs can apply to the Academic",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 9
+  },
+  {
+    "text": "ecial Educational Needs can apply to the Academic\nRegistry/Graduate School for additional support or adjustments to assessment\nwhich he/she may require. Without compromising the academic rigour of an\nassessment task, such a request should be met.\n12.3 For students who cannot complete and submit all the work for assessment\nin time, an interim grade would usually be assigned to them during those\ncircumstances.\n12.4 A student who believes that his/her final grade in a course is unfair or",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 9
+  },
+  {
+    "text": "that his/her final grade in a course is unfair or\ninaccurate may request for a review, in accordance with clearly established\nprocedural guidelines (https://handbook.ar.hkbu.edu.hk/).\n13. Roles and Responsibilities\n13.1 The formulation and execution of this assessment policy, as well as\nsubjecting it to regular review in the light of experience, depends on the genuine\ncollaboration of many parties in general and the following in particular –\nAt University level:",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 9
+  },
+  {
+    "text": "he following in particular –\nAt University level:\n(a) The Teaching and Learning Policy Committee (TLPC) is responsible for\ndeveloping and overseeing the implementation of th is institution-wide\nassessment policy. Th is policy document provides guidance to students,",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 9
+  },
+  {
+    "text": "10\nteachers, committees and assessment boards (or equivalent). The TLPC\nshould monitor the effective implementation, review the policy document where\nappropriate and propose necessary remedial actions to the Senate from time\nto time.\n(b) Working closely with the TLPC, t he Quality Assurance Committee (QAC) is\nresponsible for ensuring compliance with the assessment policy when\nacademic units submit programme and course documents for its review as part\nof the quality assurance process.",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 10
+  },
+  {
+    "text": "review as part\nof the quality assurance process.\n(c) The Academic Registry (AR), Graduate School (GS) and equivalent unit in the\nSchool of Continuing Education, are responsible for implementing the academic\nregulations which underpin the various practices set out in the institution-wide\nassessment policy.\n(d) The Centre for Holistic Teaching and Learning ( CHTL) is responsible for\nassisting teachers to develop assessment rubrics and reviewing the",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 10
+  },
+  {
+    "text": "s to develop assessment rubrics and reviewing the\nmechanism for systematic feedback. In the induction or related professional\ndevelopment activities, the CHTL provides an overview of the assessment\npolicy to new and other in -service teachers to he lp them identify the major\nassessment issues in the University.\nAt Faculty/School/AVA level:\n(e) The Deans, who chair the respective Faculty/School boards, assume the\noverall responsibility for the oversight of assessment methods and grading",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 10
+  },
+  {
+    "text": "r the oversight of assessment methods and grading\nwithin their respective F aculties/Schools, as part of the quality assurance\nmechanism for their programmes. Deans should e nsure that the Departments\ncomply with the institutional assessment policy.\nAt Department/Programme level:\n(f) The Heads of Department are the “gatekeepers” who monitorcompliance at the\ndepartment level. They should oversee the supportive structures for individual",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 10
+  },
+  {
+    "text": "oversee the supportive structures for individual\nDepartments for the successful implementation of this policy . At the beginning\nof each academic year, the Heads should remind all course teachers of the\nsalient points in this policy document.\n(g) The PMC, or equivalent, should be formed for every programme. As the Chair\nof a PMC, the Programme Director should be in charge of the design and\nrevision of programme curriculum and various student matters (such as",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 10
+  },
+  {
+    "text": "e curriculum and various student matters (such as\nacademic problems, progression and graduation). Under his/her guidance, the\nPMC should have an assessment plan for the evaluation of learning outcomes\nand student performance at the programme level, and oversee the\ndevelopment of assessment rubrics. In some cases, a Head of Department can\nalso be Programme Director.\n(h) The DAC sets general principles and guidelines for assessment at",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 10
+  },
+  {
+    "text": "neral principles and guidelines for assessment at\ndepartment/programme level. The DAC also approves the assessment tasks\nset by the course teachers, including the overseas and community partners who\nare involved in assessment, and adjusts the grades they submit if any\nanomalies are detected . In many cases, the remit and duties of the DAC are\ntaken up by the PMC.",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 10
+  },
+  {
+    "text": "11\nAt Course/Individual level:\n(i) Teachers have the responsibility for developing engaging pedagogies and\nrelevant assessment methods, including assessment rubrics, and for helping\nstudents achieve the outcomes of the courses they teach. They are expected\nto analyze and interpret the assessment data with the view to introducing\ninstructional changes in their courses. Based on the feedback from various\nstakeholders, they should review and make appropriate adjustment to",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 11
+  },
+  {
+    "text": "should review and make appropriate adjustment to\nassessment as deemed appropriate. Teachers who are course coordinators\nshould provide advice and ensure all teachers and external teaching partners,\nboth local and non-local, if any, in the course will observe this assessment\npolicy and the assessment arrangements and rubrics of the course.\n(j) While bringing in useful practical experience to the curriculum, the part-time",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 11
+  },
+  {
+    "text": "tical experience to the curriculum, the part-time\nteachers and external teaching partnersshould observe relevant guidelines and\nregulations when assessing student performance in a course. They will be\nsubject to the same quality assurance control and standards applying to full-\ntime teachers.\n(k) The students should t ake charge of their own learning and ensure that they\nunderstand the aims , purposes and expectations of different types of",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 11
+  },
+  {
+    "text": ", purposes and expectations of different types of\nassessment, and strive to perform to thebest of their ability. They must observe\nthe regulations for assessment andconduct themselves with academic honesty\nand integrity at all times.\n14. Review and Dissemination\n14.1 As a matter of good practice, this policy should be kept under regular review\nand updated in the light of experience with its implementation . Apart from posting",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 11
+  },
+  {
+    "text": "ence with its implementation . Apart from posting\nthis policy on the intranet and other websites within the University community, it will\nbe widely disseminated to all teachers at the onset of each academic year. This\npolicy will also be explained to all new students in the induction programme at the\nbeginning of each academic year.\nSeptember 2021",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 11
+  },
+  {
+    "text": "12\nReferences\nThe assessment policies of the following universities –\nCity University of Hong Kong\nCity University of London\nLingnan University\nThe Chinese University of Hong Kong\nThe University of Hong Kong\nUniversity of Adelaide\nUniversity of Canterbury\nUniversity of Edinburgh\nUniversity of New South Wales\nUniversity of Otago\nUniversity of Queensland\nUniversity of South Australia\nUniversity of Western Australia\nUNSW Sydney",
+    "source": "Policy_for_the_Assessment_of_Student_Learning.pdf",
+    "page": 12
+  },
+  {
+    "text": "1\nHONG KONG BAPTIST UNIVERSITY\nStrategy for Digital Learning and Teaching\n(Approved by the Senate in September 2022)\n1. Introduction\nThis document provides a general framework for the integration of pedagogy and technology into\nlearning and teaching at HKBU in all modes based on the principles of digital learning and teaching\n(DLT) (Grant-Smith, et al, 2019). The strategic priorities and actions herein align closely with the",
+    "source": "Strategy_for_Digital_Learning_and_Teaching.pdf",
+    "page": 1
+  },
+  {
+    "text": "orities and actions herein align closely with the\ndirections and foci of HKBU’s relevant strategic documents, including Institutional Strategic Plan\n2018 – 28, Planning Exercise Proposal 2022/23 – 2024/25 Triennium, Policy for the Assessment of\nStudent Learning, Learning and Teaching Strategy and Quality Assurance Framework.\n2. Vision\nTo provide an inclusive, flexible, engaging, and transformative physical, hybrid, mixed and/or virtual",
+    "source": "Strategy_for_Digital_Learning_and_Teaching.pdf",
+    "page": 1
+  },
+  {
+    "text": "sformative physical, hybrid, mixed and/or virtual\nlearning and teaching environment to achieve the graduate attributes and future-readiness, as well as\nfor knowledge creation and transfer through advanced technologies.\n3. Rationale\nIn using digital technology for learning and teaching, we:\n● adhere to a learner-centred approach;\n● cater for students with a variety of abilities, aspirations and backgrounds;",
+    "source": "Strategy_for_Digital_Learning_and_Teaching.pdf",
+    "page": 1
+  },
+  {
+    "text": "riety of abilities, aspirations and backgrounds; \n● integrate virtual and physical means to enhance teaching, learning, self-study, and collaboration\nbeyond limitations of distance and time; and\n● strive for fit-for-purpose deployment of resources.\n4. Scope\nThis strategy covers all educational opportunities at HKBU, including formal and informal curricular,\nas well as co- and extra-curricular learning and teaching activities, on and off campus.",
+    "source": "Strategy_for_Digital_Learning_and_Teaching.pdf",
+    "page": 1
+  },
+  {
+    "text": "rning and teaching activities, on and off campus.\n5. Benefits of Using Digital T echnology in Learning and Teaching\nDigital technology can bring about benefits in learning and teaching, for example:\nProviding broader accessibility – Without the constraints of fixed time and location, DLT enables\nstudents' accessibility to diverse sources of knowledge, facilitates different forms of interaction, and\nincreases students' learning ownership (i.e., individualised learning) with quick and immediate",
+    "source": "Strategy_for_Digital_Learning_and_Teaching.pdf",
+    "page": 1
+  },
+  {
+    "text": "individualised learning) with quick and immediate\nfeedback.\nEnhancing opportunities and quality of student learning – Cutting-edge education technology can\nalso diversify and amplify students’ collaborative learning experiences for better achievement of\nlearning outcomes. DLT also facilitates the design of novel e-pedagogical and assessment methods to\ncomplement physical activities.\nDeveloping core competencies in the digital era– Using technology in learning and teaching equips",
+    "source": "Strategy_for_Digital_Learning_and_Teaching.pdf",
+    "page": 1
+  },
+  {
+    "text": "Using technology in learning and teaching equips\nstudents with essential technology-related skills, digital literacy, and digital ethics as workers, citizens\nand lifelong learners in a digital society. It enables them to tackle unpredictable future challenges",
+    "source": "Strategy_for_Digital_Learning_and_Teaching.pdf",
+    "page": 1
+  },
+  {
+    "text": "2\nbrought by technological advancement.\nPromoting evidence-based approach – Learning analytics advance an evidence-based approach for\nprogramme and pedagogical development, assessment and quality assurance. Data on student learning\nalso supports research on learning and teaching, and informs policies and decisions.\n6. Strategic Priorities\nUnderpinning this Strategy are four broad priorities at the University, and Programme and Course\nlevels:\nAt University level, we aim at:",
+    "source": "Strategy_for_Digital_Learning_and_Teaching.pdf",
+    "page": 2
+  },
+  {
+    "text": "nd Course\nlevels:\nAt University level, we aim at:\n6.1 Building capacity for DLT\nSpecific actions1:\n- intensify a DLT culture through the integration of different platforms, systems and e-resources;\n- review resources availability and upgrade digital infrastructure with cutting-edge technology;\n- provide training and support for the usage of digital platforms, apps and e-tools; \n- cultivate digital ethics, literacy, wellness and resilience;",
+    "source": "Strategy_for_Digital_Learning_and_Teaching.pdf",
+    "page": 2
+  },
+  {
+    "text": "gital ethics, literacy, wellness and resilience; \n- provide guidelines for incentivising, recognising, and sharing staff's achievements in DLT;\n- conduct regular reviews for risk assessment and management as well as planning for DLT; and\n- collect data for quality assurance, data-informed decision-making and research related to DLT.\n6.2 Ensuring equal access to digital resources by all students\nSpecific actions1:",
+    "source": "Strategy_for_Digital_Learning_and_Teaching.pdf",
+    "page": 2
+  },
+  {
+    "text": "ital resources by all students\nSpecific actions1:\n- provide affordable, quality, and user-friendly DLT resourcesand related student support; and\n- raise the University community’s awareness and understanding of students’ diverse learning\nneeds.\nAt Programme and Course levels, we aim at:\n6.3 Using digital tools for diverse pedagogies, innovative programmes and course designs\nSpecific actions1:\n- adopt digital tools to enhance the development of research-led curriculum, and experiential\nlearning;",
+    "source": "Strategy_for_Digital_Learning_and_Teaching.pdf",
+    "page": 2
+  },
+  {
+    "text": "search-led curriculum, and experiential\nlearning;\n- promote digital initiatives to support collaboration with various stakeholders for integration into\nthe curriculum;\n- use instructional tools effectivelyfor innovative pedagogical and authentic assessment methods; \nand\n- use DLT to strengthen transdisciplinary collaboration.\n6.4 Promoting digital cross-cultural learning experiences to complement in-person activities\nSpecific actions1:",
+    "source": "Strategy_for_Digital_Learning_and_Teaching.pdf",
+    "page": 2
+  },
+  {
+    "text": "omplement in-person activities\nSpecific actions1:\n- adopt online activities and other blended initiatives to promote collaborative learning and\nteaching with partners worldwide;\n- strengthen virtual co-curricular and extra-curricular activities to connect students with their\ncounterparts worldwide; and\n- implement exchange programmes that adopt physical and virtual components.\n1\nSpecific actions set out in this Strategy are some examples and are not meant to be exhaustive.",
+    "source": "Strategy_for_Digital_Learning_and_Teaching.pdf",
+    "page": 2
+  },
+  {
+    "text": "3\nReferences\nGrant-Smith, D., Donnet, T., Macaulay, J., & Chapman, R. (2019). Principles and practices for\nenhanced visual design in virtual learning environments: Do looks matter in student engagement?\nIn Student-centered virtual learning environments in higher education (pp. 103-133). IGI Global.\nHKBU. (2021). Policy for the Assessment of Student Learning. HK: HKBU.",
+    "source": "Strategy_for_Digital_Learning_and_Teaching.pdf",
+    "page": 3
+  }
+]

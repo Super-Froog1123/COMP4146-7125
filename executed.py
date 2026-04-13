@@ -3,9 +3,11 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.responses import StreamingResponse
 import json
+from Modules.rag_3.rag_retriever import init_rag, retrieve_context
+from Modules.rag_3.prompt_builder import build_user_prompt
 
 # API Setting
-OLLAMA_URL = "http://localhost:11434/api/generate"
+OLLAMA_URL = "http://localhost:11434/api/chat"
 MODEL = "gemma3:4b"
 
 app = FastAPI(title="HKBU Study Companion")
@@ -17,27 +19,11 @@ class Query(BaseModel):
     is_search: bool = False
     use_neural_retrieval: bool = False
 
-def build_prompt(context: str, question: str):
-    return f"""
-You are a helpful HKBU study assistant.
-Answer the question based ONLY on the provided context.
-If you don't know, say "I don't have enough information."
-
-Context:
-{context}
-
-Question:
-{question}
-
-Answer (concise with citation):
-"""
-
-def complete_document(prefix: str):
+def complete_document(message: str):
     payload = {
         "model": MODEL,
-        "prompt": prefix,
+        "messages": [message],
         "stream": True,
-        "raw": True,
         "options": {
             "num_predict": 256,
             "temperature": 0.3
@@ -49,23 +35,31 @@ def complete_document(prefix: str):
             for chunk in r.iter_lines():
                 if chunk:
                     data = json.loads(chunk)
-                    token = data.get("response", "")
+                    token = data.get("message", {}).get("content", "")
                     yield token
 
     except requests.exceptions.ConnectionError:
-        yield "\n❌ error: Can't find ollama serve"
+        yield "\nerror: Can't find ollama serve"
     except Exception as e:
-        yield f"\n❌ error: {str(e)}"
+        yield f"\nerror: {str(e)}"
 
 # API
 @app.post("/ask")
 def ask(q: Query):
-    prompt = build_prompt(q.context, q.question)
+
+    context, results, stats = retrieve_context(q.question, top_k=3)
+    user_prompt = build_user_prompt(
+        user_query=q.question,
+        retrieved_context=context,
+        search_mode=q.is_search,
+        think_mode=False
+    )
     return StreamingResponse(
-        complete_document(prompt),
+        complete_document(user_prompt),
         media_type="text/plain; charset=utf-8"
     )
     
+init_rag()
 
 print("✅ Backend Address: http://localhost:8326")
 print("✅ Backend Document: http://localhost:8326/docs")
