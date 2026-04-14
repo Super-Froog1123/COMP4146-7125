@@ -15,7 +15,7 @@ app = FastAPI(title="HKBU Study Companion")
 # Query Format
 class Query(BaseModel):
     question: str
-    context: str = "None"
+    context: list = []
     is_search: bool = False
     use_neural_retrieval: bool = False
 
@@ -54,8 +54,9 @@ def ask(q: Query):
         search_mode=q.is_search,
         think_mode=False
     )
+    prompt = q.context + user_prompt
     return StreamingResponse(
-        complete_document(user_prompt),
+        complete_document(prompt),
         media_type="text/plain; charset=utf-8"
     )
     
