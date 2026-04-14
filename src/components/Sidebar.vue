@@ -1,32 +1,38 @@
 <template>
-  <aside class="sidebar">
-    <div class="sidebar-header">
-      <h2>Conversations</h2>
-      <button class="new-btn" type="button" @click="$emit('create')">+ Add</button>
-    </div>
+  <aside class="sidebar" :class="{ collapsed }">
+    <button class="toggle-btn" type="button" @click="$emit('toggle-collapse')">
+      {{ collapsed ? '>' : '<' }}
+    </button>
 
-    <ul class="conversation-list">
-      <li
-        v-for="conversation in conversationList"
-        :key="conversation.id"
-        class="conversation-item"
-        :class="{ active: conversation.id === activeConversationId }"
-        @click="$emit('select', conversation.id)"
-      >
-        <div class="meta">
-          <p class="title">{{ conversation.title }}</p>
-          <p class="time">{{ formatTime(conversation.updatedAt) }}</p>
-        </div>
-        <button
-          class="delete-btn"
-          type="button"
-          title="Delete conversation"
-          @click.stop="$emit('remove', conversation.id)"
+    <template v-if="!collapsed">
+      <div class="sidebar-header">
+        <h2>Conversations</h2>
+        <button class="new-btn" type="button" @click="$emit('create')">+ Add</button>
+      </div>
+
+      <ul class="conversation-list">
+        <li
+          v-for="conversation in conversationList"
+          :key="conversation.id"
+          class="conversation-item"
+          :class="{ active: conversation.id === activeConversationId }"
+          @click="$emit('select', conversation.id)"
         >
-          Delete
-        </button>
-      </li>
-    </ul>
+          <div class="meta">
+            <p class="title">{{ conversation.title }}</p>
+            <p class="time">{{ formatTime(conversation.updatedAt) }}</p>
+          </div>
+          <button
+            class="delete-btn"
+            type="button"
+            title="Delete conversation"
+            @click.stop="$emit('remove', conversation.id)"
+          >
+            Delete
+          </button>
+        </li>
+      </ul>
+    </template>
   </aside>
 </template>
 
@@ -42,14 +48,19 @@ const props = defineProps({
   activeConversationId: {
     type: String,
     default: ''
+  },
+  collapsed: {
+    type: Boolean,
+    default: false
   }
 });
 
 // emits
 // create：新建会话
 // select(conversationId: string)：切换会话
-// select(conversationId: string)：切换会话
-defineEmits(['create', 'select', 'remove']);
+// remove(conversationId: string)：删除会话
+// toggle-collapse：折叠/展开
+defineEmits(['create', 'select', 'remove', 'toggle-collapse']);
 
 // formatTime(value: string)：格式化时间展示
 function formatTime(value) {
@@ -70,6 +81,28 @@ function formatTime(value) {
   background: #ffffff;
   padding: 16px;
   overflow-y: auto;
+  transition: padding 0.2s;
+}
+
+.sidebar.collapsed {
+  padding: 8px;
+  overflow: hidden;
+}
+
+.toggle-btn {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e6ebf5;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.sidebar.collapsed .toggle-btn {
+  margin: 0 auto;
 }
 
 .sidebar-header {

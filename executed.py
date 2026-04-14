@@ -25,7 +25,7 @@ def complete_document(message: str):
         "messages": [message],
         "stream": True,
         "options": {
-            "num_predict": 256,
+            "num_predict": 2048,
             "temperature": 0.3
         }
     }

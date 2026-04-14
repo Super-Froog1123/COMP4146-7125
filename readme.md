@@ -87,3 +87,143 @@ activeConversationId: string：当前会话 id
 当前版本为单用户前端聊天框架，消息与会话仅在当前页面实例中维护，不包含登录、身份识别、用户隔离与多用户会话管理能力。
 
 当前前端仅在内存中维护会话与消息数据（conversationList / messageList），后端返回的数据会被追加到当前会话中，但不会持久化；页面刷新后状态会重置。如需保留数据，可扩展本地存储或接入后端数据库。
+
+
+## 2026.4.14_11:50 接入接口
+
+查看后端
+
+先确认后端地址
+再在前端发请求
+最后处理跨域和字段对齐
+
+### 第一步：先找后端接口
+
+请求
+
+方法：POST
+地址：http://localhost:8326/ask
+
+```JSON
+{
+  "question": "string",
+  "context": "None",
+  "is_search": false,
+  "use_neural_retrieval": false
+}
+```
+
+返回
+
+string
+
+### 第二步：整理文件
+
+前端文件(Vue3)
+
+index.html; 入口HTML
+vite.config.js; Vite构建配置
+package.json; 前端依赖与脚本
+src/main.js; Vue应用入口
+src/App.vue; 根组件
+src/style.css; 全局样式
+src/components/Sidebar.vue; 侧边栏组件
+src/components/Welcome.vue; 欢迎提示语组件
+
+
+后端文件与前端有关（FastAPI + RAG）
+
+executed.py; 后端入口，FastAPI应用，定义 /ask 接口
+
+其他
+.gitigore; Git 忽略规则
+readme.md; 项目说明
+dist/; 前端构建产物
+node_modules/; 前端依赖包
+__pycache__/; Python编译缓存
+
+
+### 第三步：连接
+
+前端所有状态都集中在 App.vue 中管理
+
+要改3个函数：
+
+1. requestAssistantReply 完全重写
+
+  从 response.json() 一次性读取 → 改为 response.body.getReader()             
+  逐块读取流式响应，每个 token 通过回调传出。
+
+2. handleSendMessage — 修改调用方式
+
+  原来等完整回复再 pushMessage 一次 → 改为先 pushMessage 一条空的 assistant
+  消息，然后流式接收过程中不断追加内容到这条消息。
+
+3. extractAssistantContent — 可以删掉
+
+  流式返回的是纯文本 token，不再是 JSON 对象，这个解析函数不再需要
+
+跑通
+
+### 第四步：增加神经检索模式
+
+  ChatWindow.vue                                                             
+                                                                           
+  - 新增 searchMode ref 状态                                               
+  - 输入框左侧加了 Search 切换按钮（OFF 时灰色，ON 时蓝色高亮）              
+  - onSend() emit 时带上 searchMode
+  - Welcome 示例点击也带上 searchMode                                        
+                                                                           
+  App.vue                                                                    
+
+  - handleSendMessage(content, searchMode) — 接收第二个参数
+  - buildRequestPayload(conversation, text, searchMode) — is_search
+  由参数控制
+  - requestAssistantReply(conversation, text, onToken, searchMode) — 传递到
+  payload                                                                    
+   
+  数据流：                                                                   
+  用户点 Search 按钮 → searchMode 取反                      
+  用户发送消息 → emit('send', text, searchMode)
+  → handleSendMessage(text, searchMode)
+  → buildRequestPayload → { is_search: searchMode }
+  → 后端收到 is_search: true/false
+
+
+### 第五步：修复侧边栏bug
+
+改动完成，总结：                                                           
+                                      
+  Bug 修复：删除会话循环创建                                                 
+                                                                           
+  handleRemoveConversation 中，原来删完列表为空会 createConversation
+  创建新对话 → 新对话出现 → 再删又创建。现在改为只置空                       
+  activeConversationId，不再自动创建。
+                                                                             
+  侧边栏折叠                                                
+
+  ┌─────────────┬─────────────────────────────────────────────────────────┐
+  │    文件     │                          改动                           │
+  ├─────────────┼─────────────────────────────────────────────────────────┤
+  │ Sidebar.vue │ 新增 collapsed prop，折叠时只显示 > 按钮，展开时显示 <  │
+  │             │ + 完整内容                                              │
+  ├─────────────┼─────────────────────────────────────────────────────────┤
+  │ App.vue     │ 新增 sidebarCollapsed 状态，布局宽度通过 v-bind         │
+  │             │ 动态切换 280px / 48px，带 0.2s 过渡动画                 │  
+  └─────────────┴─────────────────────────────────────────────────────────┘
+                                                                             
+  折叠/展开操作：点击侧边栏上的 < / > 按钮切换。 
+
+  ⏺ 改完了。现在的行为：
+                                                                             
+  - 大屏幕：侧边栏正常显示，点击 < 可手动折叠                                
+  - **小屏幕 (<=920px)**：自动折叠成左侧一个 > 按钮，布局始终是左右结构（48px
+   + 1fr），不会跑到顶部
+                                                                             
+  如果你想在小屏时展开侧边栏查看会话列表，点 > 按钮就行。
+
+
+扩大回答的字数限制  
+
+
+## 2026.4.14_13:32 基本完成要求
