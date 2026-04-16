@@ -75,7 +75,7 @@ const nowISO = () => new Date().toISOString();
 const generateId = () => `${Date.now()}-${Math.random().toString(16).slice(2)}`;
 const CHAT_API_URL = '/api/ask';
 
-const SYSTEM_PROMPT = 'You are a strict teaching assistant for HKBU. Use ONLY the provided context to answer. If the answer is not in the context, say: "I don\'t know based on the provided course documents."';
+const SYSTEM_PROMPT = '';
 
 
 // createConversation(title: string)：
