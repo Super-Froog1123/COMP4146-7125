@@ -227,3 +227,141 @@ __pycache__/; Python编译缓存
 
 
 ## 2026.4.14_13:32 基本完成要求
+
+## 2026.4.16_12:14 添加历史对话
+
+  改动总结：                                                                    
+
+  1. 新建 historyManager.js — 提供                                              
+  loadConversations/saveConversations/loadActiveId/saveActiveId，读写
+  localStorage                                                                  
+  2. App.vue 初始化 — conversationList 和 activeConversationId 从 localStorage
+  恢复，conversationCounter 根据已有对话自动计算                                
+  3. watch 自动持久化 — 对话列表或激活 ID 变化时自动保存到浏览器缓存
+  4. context 参数 — 调用 /api/ask 时把历史消息以 [{role, content}] 格式通过     
+  context 传给后端 
+
+
+后端修改一部分：⏺ 修了两处：                      
+                        
+1. q.context + user_prompt → q.context + [user_prompt] — user_prompt 是       
+dict，用 [] 包成列表后再拼接                                                  
+2. complete_document(message) → complete_document(messages)，messages:        
+[message] → messages: messages — 之前会把整个消息列表再包一层，导致 Ollama  
+收到嵌套结构 
+
+
+⏺ is_search 按钮修复完成。数据流现在是：                                                      
+  ChatWindow 点击发送 → emit('send', text, searchMode.value) →                  
+  handleSendMessage(content, searchMode) → requestAssistantReply(conversation,  
+  text, searchMode) → buildRequestPayload(..., searchMode) → { is_search:       
+  searchMode }                                                                                                   
+  之前 searchMode 在 ChatWindow emit 出来后被 handleSendMessage                 
+  丢弃了，is_search 永远是 false。现在整条链路打通了
+
+
+ 修复完成。改动：                                   
+                                                                              
+  1. handleRemoveConversation — 删到最后一个时不再自动创建兜底对话，只清空
+  activeConversationId                                                          
+  2. handleSendMessage — 列表为空时先自动创建对话再发送，这样 Welcome           
+  页面点建议也能正常工作
+                                                                                
+  现在删掉最后一个对话后页面会回到 Welcome 空状态，输入或点建议时才创建新对话
+
+
+                                                                         
+⏺ 完成。现在发送给 /api/update 的格式如下：
+                                                                                
+  {                                       
+    "query_list": [
+      { "role": "system", "content": "You are a strict teaching assistant for   
+  HKBU..." },
+      { "role": "user", "content": "第一条消息" },                              
+      { "role": "assistant", "content": "第一条回复" },                       
+      { "role": "user", "content": "第二条消息" },                              
+      { "role": "assistant", "content": "第二条回复" }
+    ]
+  }
+
+  改动：
+  1. 新增 buildQueryList — 在 messageList 前拼接 system 消息，生成 [{role, 
+  content}] 列表                                                                
+  2. 新增 notifyUpdate — 调用 /api/update，静默失败不影响主流程
+  3. 在 handleSendMessage 的 try 和 catch 中，对话消息变化后调用 notifyUpdate 
+
+
+## 问题给后端：
+
+### 更新内容：
+
+#### 1.
+
+我改了点后端，但是回不去了，我没有merge github 4月16号之前的后端内容，开了个新分支。
+
+后端：⏺ 修了两处：                      
+                        
+1. q.context + user_prompt → q.context + [user_prompt] — user_prompt 是       
+dict，用 [] 包成列表后再拼接
+
+2. complete_document(message) → complete_document(messages)，messages:        
+[message] → messages: messages — 之前会把整个消息列表再包一层，导致 Ollama  
+收到嵌套结构
+
+<b style = "color: orange">问题：这些后端改动会不会影响到ollama历史的读取，我单独测试后端的过程中发现后端并不能很好的有历史记忆，怀疑是ollama能不能接受上下文拼接的问题，需要后端测试，需要给一个确定的前端调用历史格式，要不要system，uesr和assistant，需要确定接口数量</b>
+
+这个：
+
+``` markdown
+哦，另外我后端加了一个新接口/update，每次对话发生改变时你都要调用一下，参数只有一个query_list，是一个列表，格式为：
+[
+{"role":"system", "content":"..."},
+{"role":"user", "content":"..."},
+...
+]
+```
+后端目前没有/api/update接口，我们需要吗？尽量定下来啊，我加了接口然后发现后端没有，实话讲我改起来没那么熟练，其实check挺费事的。。。
+
+#### 2
+
+现在只发一个 POST /api/ask，格式为：
+<b style = "color:orange">使用浏览器console.log 可以测试</b>
+
+```Json                      
+{                                       
+  "question": "用户输入",
+  "context": [                                                                
+    { "role": "system", "content": "You are a strict teaching assistant for 
+HKBU..." },                                                                   
+    { "role": "user", "content": "历史消息1" },                             
+    { "role": "assistant", "content": "历史回复1" },                          
+    { "role": "user", "content": "当前消息" }
+  ],
+  "is_search": true,
+  "use_neural_retrieval": false
+}
+```
+
+#### 3
+
+需不需要加新的参数用于区分对话？
+但是考虑到前端每次会send全部的对话历史，应该是不用吗？
+
+
+#### 4
+
+增加 use_neural_retrieval button
+但是测试后端use_neural_retrieval是无用的
+
+
+#### 5
+
+我们的RAG后端有用嘛？
+
+我测试下来太多：I don't know based on the provided course documents.
+
+只有：ITM's teaching syllabus; is_search = true;
+回答是base on RAG的：ANSWER: According to GenAIPrinciples.pdf, Page 2, ITM’s teaching syllabus incorporates generative AI tools into teaching and learning activities and actively develops AI-literacy and competencies.
+
+
+## 2026.4.16_14:10 开新分支投送git

@@ -1,10 +1,11 @@
 <template>
-  <aside class="sidebar" :class="{ collapsed }">
+  <aside class="sidebar" :class="{ collapsed, 'mobile-open': !collapsed }">
     <button class="toggle-btn" type="button" @click="$emit('toggle-collapse')">
       {{ collapsed ? '>' : '<' }}
     </button>
 
-    <template v-if="!collapsed">
+    <div class="sidebar-body" :class="{ open: !collapsed }">
+      <button class="close-btn" type="button" @click="$emit('toggle-collapse')">Close</button>
       <div class="sidebar-header">
         <h2>Conversations</h2>
         <button class="new-btn" type="button" @click="$emit('create')">+ Add</button>
@@ -32,7 +33,7 @@
           </button>
         </li>
       </ul>
-    </template>
+    </div>
   </aside>
 </template>
 
@@ -77,16 +78,16 @@ function formatTime(value) {
 
 <style scoped>
 .sidebar {
+  position: relative;
   border-right: 1px solid #e7eaf2;
   background: #ffffff;
-  padding: 16px;
   overflow-y: auto;
   transition: padding 0.2s;
+  padding: 16px;
 }
 
 .sidebar.collapsed {
   padding: 8px;
-  overflow: hidden;
 }
 
 .toggle-btn {
@@ -99,10 +100,23 @@ function formatTime(value) {
   cursor: pointer;
   font-size: 14px;
   margin-bottom: 8px;
+  flex-shrink: 0;
 }
 
 .sidebar.collapsed .toggle-btn {
   margin: 0 auto;
+}
+
+.sidebar-body {
+  display: none;
+}
+
+.sidebar-body.open {
+  display: block;
+}
+
+.close-btn {
+  display: none;
 }
 
 .sidebar-header {
@@ -177,5 +191,56 @@ h2 {
   border-radius: 6px;
   cursor: pointer;
   flex-shrink: 0;
+}
+
+/* ===== 小屏：按钮在左侧，对话列表从顶部弹出 ===== */
+@media (max-width: 920px) {
+  .sidebar {
+    position: static;
+    padding: 8px;
+    overflow: visible;
+    border-right: none;
+    border-bottom: 1px solid #e7eaf2;
+  }
+
+  .sidebar.collapsed {
+    padding: 8px;
+  }
+
+  .toggle-btn {
+    margin: 0;
+  }
+
+  .sidebar-body {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 60vh;
+    background: #ffffff;
+    border-bottom: 1px solid #e7eaf2;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    padding: 12px 16px;
+    overflow-y: auto;
+    z-index: 100;
+  }
+
+  .sidebar-body.open {
+    display: block;
+  }
+
+  .close-btn {
+    display: block;
+    width: 100%;
+    border: 1px solid #e6ebf5;
+    border-radius: 6px;
+    background: #fff;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 8px;
+  }
 }
 </style>
