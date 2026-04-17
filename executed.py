@@ -13,15 +13,30 @@ MODEL = "gemma3:4b"
 app = FastAPI(title="HKBU Study Companion")
 builder = PromptBuilder()
 
-# Query Format
 class Query(BaseModel):
-    question: str
-    context: list = []
-    system_prompt: str = ""
-    is_search: bool = False
-    use_embedding_retrieval: bool = False
-    think_mode: bool = False
-    is_study_plan: bool = False
+    """HKBU Study Assistant providing three mutually exclusive working modes.
+    
+    ====================   ===========   ===============   =====================
+    Mode                    is_search     is_study_plan     Optional Features
+    ====================   ===========   ===============   =====================
+    Normal Mode             False         False             think_mode
+    Search Mode (RAG)       True          False             use_embedding_retrieval
+    Study Plan Mode         False         True              -
+    ====================   ===========   ===============   =====================
+    
+    Constraints:
+        - is_search and is_study_plan cannot both be True
+        - use_embedding_retrieval only takes effect when is_search=True
+        - think_mode only takes effect when is_search=False and is_study_plan=False
+    """
+
+    question: str                           # user query
+    context: list = []                      # history record
+    system_prompt: str = ""                 # system role setting
+    is_search: bool = False                 # enable search mode?
+    use_embedding_retrieval: bool = False   # using embedding retrieval?(if not, use lexical retrieval)
+    think_mode: bool = False                # enable think mode?
+    is_study_plan: bool = False             # ebable study plan mode?
 
 def complete_document(prompt: str):
     """Generate streaming response from Ollama"""
