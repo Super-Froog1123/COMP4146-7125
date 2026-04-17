@@ -6,7 +6,6 @@ def build_user_prompt(
     retrieved_context: str, 
     search_mode: bool = True,
     think_mode: bool = False,
-    history: list = None
 ) -> dict:
     """
     Build the user prompt for the LLM
@@ -80,10 +79,11 @@ def build_full_prompt_list(
     Returns:
         List of messages for Ollama
     """
-    messages = [{"role": "system", "content": system_prompt}]
-    messages.extend(history)
-    messages.append(user_prompt)
-    return messages
+    return [
+        {"role": "system", "content": system_prompt},
+        *history,
+        user_prompt
+    ]
 
 
 # Test code
