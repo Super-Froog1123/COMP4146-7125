@@ -230,6 +230,241 @@
     "page": 4
   },
   {
+    "text": "COMP4146/7125 Prompt Engineering for Generative AI Group Project Instructions Overall Requirements 1. Groups: Form a group of 1 to 6 students (at least 3 members are recommended). 2. Milestones: Please follow all deadlines below. • Group Registration: Due by 11:59 pm, 27 March 2026 (Friday). Register group members through the link [https://hkbuchtl.qualtrics.com/jfe/form/SV_40ibLsybfVB2jga]. • Final Submission: Due by 11:59 pm, 22 April 2026 (Wednesday).",
+    "source": "COMP7125Instructions.pdf",
+    "page": 1
+  },
+  {
+    "text": "ssion: Due by 11:59 pm, 22 April 2026 (Wednesday). Submit source code and report to Moodle once per team. • In-person Presentation: 24 April 2026 (Friday). The detailed order will be announced after registration closes. 3. Final Submission: a. Project Report (PDF): Maximum 5 A4 pages, single column. Include problem statement, system design, minimum-implementation checklist, experiments (including token-efficiency analysis), limitations, references, and a contribution statement. b. Source Code (.",
+    "source": "COMP7125Instructions.pdf",
+    "page": 1
+  },
+  {
+    "text": "s, and a contribution statement. b. Source Code (.zip): Include notebook (minimum requirement), scripts, requirements (or environment file), and README with setup/run steps. You should make sure that the code runs in the FSC 801CD lab environment after installing required packages. 4. Presentation: Each group will have approximately 8 minutes for their presentation, followed by a Q&A session. Every member must present their part of the work.",
+    "source": "COMP7125Instructions.pdf",
+    "page": 1
+  },
+  {
+    "text": "Every member must present their part of the work. The use of visualizations (figures, graphs, demos, short videos) is highly encouraged to clearly convey your project's story. 5. Academic Integrity: a. We have a zero-tolerance policy for plagiarism. All submissions will be checked by anti-plagiarism software. Copying code from online sources or generative AI tools without proper citation and understanding is strictly prohibited. b.",
+    "source": "COMP7125Instructions.pdf",
+    "page": 1
+  },
+  {
+    "text": "ation and understanding is strictly prohibited. b. Submission of work from other courses or previous projects is considered self-plagiarism and is not allowed. 6. Late Policy: Late submission without prior approval will not be accepted.",
+    "source": "COMP7125Instructions.pdf",
+    "page": 1
+  },
+  {
+    "text": "Technical Requirements 1. Model and API Constraints: Use Ollama with local models up to 12B parameters. • Recommended models include gemma3:4b, gemma3:12b, qwen3:9b, or similar small open-source LLMs. • For the core pipeline, use raw generation only: Python ollama.generate or HTTP POST /api/generate. Sample usage is included in template notebook. 2. Reproducibility: Your project should be FSC801CD-compatible. Missing dependencies or non-reproducible setup may reduce marks. 3.",
+    "source": "COMP7125Instructions.pdf",
+    "page": 2
+  },
+  {
+    "text": "ies or non-reproducible setup may reduce marks. 3. Token Efficiency: Apply prompt-engineering methods from this course to reduce unnecessary tokens while maintaining answer quality. Efficiency is part of grading. 4. Minimum Implementations: • A working baseline in at least one Jupyter Notebook that runs end-to-end. (Lab sessions) • Prompt assembly with clear instruction, context, and response-format control (for example, role/task framing, explicit constraints, and a clear transition to final",
+    "source": "COMP7125Instructions.pdf",
+    "page": 2
+  },
+  {
+    "text": "icit constraints, and a clear transition to final answer). (Topic 6) • Generation control with key parameters (such as temperature and output length) and short justification of settings in the report. (Topic 2) • Conversation management where applicable (history handling and/or system-message control). (Topic 3) • Context engineering pipeline: retrieval, snippetizing/chunking, and relevance prioritization before generation.",
+    "source": "COMP7125Instructions.pdf",
+    "page": 2
+  },
+  {
+    "text": "g, and relevance prioritization before generation. (Topic 4&5) • RAG evidence with at least one lexical retrieval setting and one embedding-based retrieval setting, plus a short comparison. (Topic 5) • Basic evaluation on representative queries, including at least one quality comparison and one token-usage comparison. (Topic 4) 5. Advanced Implementations (Optional; higher distinction): • Any technique from Topics 7-11 is considered advanced, including reasoning-focused prompting,",
+    "source": "COMP7125Instructions.pdf",
+    "page": 2
+  },
+  {
+    "text": "advanced, including reasoning-focused prompting, ReAct/tool-augmented reasoning, conversational workflows/agents, advanced evaluation frameworks, or safety/taming strategies. • Any technique outside the taught syllabus is also advanced (for example, web/mobile UI, deployment, external orchestration, or database-backed product features). • Advanced work receives bonus value only when minimum implementations are complete and technically sound. 6.",
+    "source": "COMP7125Instructions.pdf",
+    "page": 2
+  },
+  {
+    "text": "ementations are complete and technically sound. 6. Project Topic: • Given topic: HKBU Study Companion. • Goal: build a local assistant for course-related and study-planning questions using local models and local context files. • Features: § Ingest and retrieve from local course documents (for example syllabus/policies, student handbooks, university regulations, or instructor provided files). § Answer student queries with citation snippets from retrieved context.",
+    "source": "COMP7125Instructions.pdf",
+    "page": 2
+  },
+  {
+    "text": "ies with citation snippets from retrieved context. § Support multi-turn Q and A with conversation memory. § Provide study plan suggestions based on user constraints (time, goals, workload). § Include one baseline comparison: no-RAG vs RAG (or lexical vs neural retrieval). • Propose your own topic • You may propose another interesting topic with comparable technical scope. • Creativity is encouraged, but all minimum requirements must still be satisfied.",
+    "source": "COMP7125Instructions.pdf",
+    "page": 2
+  },
+  {
+    "text": "all minimum requirements must still be satisfied. • Maybe you are creating the next application with millions of users!",
+    "source": "COMP7125Instructions.pdf",
+    "page": 2
+  },
+  {
+    "text": "3. Evaluation Criteria The group project contributes 20% to the final course grade. Project marking uses the rubric below (total 100%). • Problem Definition and Scope (10%): clarity of use case, constraints, and success criteria. • Minimum Implementations (30%): completeness and correctness of required first-half techniques. • Advanced Implementations (20%): depth and technical merit of second-half/out-of-syllabus extensions.",
+    "source": "COMP7125Instructions.pdf",
+    "page": 3
+  },
+  {
+    "text": "l merit of second-half/out-of-syllabus extensions. • Evaluation, Analysis and Reflection (10%): quality of experiments, error analysis, and token-efficiency evidence. • Code Quality and Reproducibility (10%): organization, reliability, package/version control, and FSC801CD runnability. • Presentation (20%): communication quality, presentation skills, structure, visual evidence, and balanced team participation.",
+    "source": "COMP7125Instructions.pdf",
+    "page": 3
+  },
+  {
+    "text": "PromptEngineeringforGenerativeAICOMP4146/7125 Prompt Engineering for Generative AI, Semester 2, 2025/26Dr. Shichao Ma\n1",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 1
+  },
+  {
+    "text": "ThepopularityofPromptEngineering•LinkedIn reports that 3× more C-suite leaders are adding AI skills (including prompt engineering) to their profiles vs. two years prior, and frames AI literacy as a top leadership skill priority.•PublishedonApr 29, 2025•https://news.linkedin.com/2025/ai-adoption-starts-at-the-top--3x-more-c-suites-on-linkedin-are-•Prompt engineering is entering the executive mainstream (not just engineers).\n2",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 2
+  },
+  {
+    "text": "ThepopularityofPromptEngineering•Microsoft + LinkedIn Work Trend Indexreports explosive growth in members adding AI skills to profiles and shows that AI mentions in job posts increase applications (a proxy for popularity + market pull).•ReleasedonMay 8, 2024•https://news.microsoft.com/source/2024/05/08/microsoft-and-linkedin-release-the-2024-work-trend-index-on-the-state-of-ai-at-work/•AI/prompting is ‘resume-worthy’ and affects job-market behavior.\n3",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 3
+  },
+  {
+    "text": "ThepopularityofPromptEngineering•Washington Postmadeacoverage of employers increasingly seeking “AI literate” candidates across roles, reflecting broad normalization of AI tool use (where prompting is a core practical capability)•ReleasedonAug 30, 2025•https://www.washingtonpost.com/business/2025/08/30/job-skills-ai-literacy/•Prompting is becoming a baseline workplace literacy.\n4",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 4
+  },
+  {
+    "text": "ThepopularityofPromptEngineering\nSo...whatis“PromptEngineering”exactly?\n🤔\n5\nVideo source: https://www.youtube.com/shorts/onh5FlzGB8I?feature=share\nSam Altman on: Is Prompt Engineering a REAL Job?",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 5
+  },
+  {
+    "text": "“Prompt” , as a word\n6",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 6
+  },
+  {
+    "text": "“Prompt” , as a word•An act of encouraging a hesitating speaker. •Example: “with barely a prompt, Babara talked on”\n7",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 7
+  },
+  {
+    "text": "Prompt to a computer•Now imagine you are talking to a computer, instead of Barbara, in natural languages.•That is “prompting” in the scope of Computer Science.\n8",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 8
+  },
+  {
+    "text": "Why it is important?•There are multiple ways to interact with a computer.•CLI (Basic instructions) => GUI (Whatyouseeiswhatyouget) => Natural Language (Language is what make us human)•Closer to human habits.•More powerfulandflexible.•For each transition, there will be many opportunities\n9",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 9
+  },
+  {
+    "text": "How about “Engineering”?•Engineering is the practice of applying scientific, mathematical, and technical principles to design, build, and maintain structures, machines, systems, and processes. •It is a problem-solving discipline that uses knowledge from natural sciences to create solutions for real-world needs, from the infrastructure of cities to the technology in our pockets. •Key branches include chemical, civil, electrical, and mechanical engineering, each focusing on specific areas like",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 10
+  },
+  {
+    "text": "engineering, each focusing on specific areas like materials, infrastructure, electronics, and machinery. 10",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 10
+  },
+  {
+    "text": "What engineering involves•Problem-solving: •Identifying challenges and creating solutions.•Design: •Planning and creating blueprints for new products or systems.•Building: •Constructing the designed solutions.•Testing and analysis: •Ensuring that the final product functions correctly and safely.•Improving existing systems: •Enhancing existing structures or processes for better efficiency and functionality. 11",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 11
+  },
+  {
+    "text": "Prompt engineering and generative models•Some history•Early NLP systems were rule-based (hand-written grammars, templates).•Modern systems use large neural generative models trained on massive text corpora.•With generative models, the input text itself becomes a powerful control mechanism → prompting.•Prompt engineering only makes sense in the context of generative models•Generative models produce new content (text, code, images) by predicting likely continuations.",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 12
+  },
+  {
+    "text": "code, images) by predicting likely continuations.•Therefore, they can be steered by instructions, examples, constraints, tone, and formatting in the prompt.12",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 12
+  },
+  {
+    "text": "Itdiffers from non-generative systems•Many programs are deterministic tools:•You can’t “prompt” the Calculator app to “be more creative” with results.•A binary classifier (e.g., dog vs. cat) outputs a label/probability, not an open-ended response.•These systems can’t be “encouraged to say something” because they don’t generate language; they execute a fixed function.•Prompt engineering is essentially interface design for probabilistic text generation:•specify task + context + constraints +",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 13
+  },
+  {
+    "text": "eneration:•specify task + context + constraints + desired output format•to reliably guide a generative model’s behavior.13",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 13
+  },
+  {
+    "text": "Beyond the generative model•Generative models = capabilities (“the brain”)•Generate text/code/images by learning patterns in data (next-token / next-step prediction)•Strong at reasoning, drafting, summarizing, planning•Typically, stateless and non-action-taking unless connected to tools•AI agents = systems (“brain + hands + goals”)•Goal-directed loop: plan → act → observe → revise•Uses tools/APIs (search, databases, email, code execution, enterprise systems)•Adds state & memory (context,",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 14
+  },
+  {
+    "text": "enterprise systems)•Adds state & memory (context, history, preferences, task progress)•Includes controls (validation, permissions, logging, human approval when needed) 14",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 14
+  },
+  {
+    "text": "Beyond the generative model•Prompt engineering mayhelp(but ofcourse,itselfisn’t sufficient)•Prompts specify role, goals, constraints, tool-use rules, output formats•ThereliabilityofAIagent usually comes from orchestration + retrieval + validation + monitoring•Prompting → Tool Use → Feedback Loop → Reliability•AnAIagentneedsotherlevers: workflow design, fine-tuning, policies/guardrails\n15",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 15
+  },
+  {
+    "text": "About this course•It’snotaboutfindingthe“magicword” ,the goal of this course is to equip you with the theory, techniques, tips, and tricksyou need to master prompt engineering and build successful LLM applications.•Explain LLM basics, how they work, and how to build apps with them.•Teach essential prompt-engineering: getting context, prioritizing, packing, and templating.•Cover advanced methods: building LLM workflows and evaluating model performance.",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 16
+  },
+  {
+    "text": "ng LLM workflows and evaluating model performance.•DeliveredbyLectures+Labs,assessedbyGroupproject(moredetailsonthelaterpages) 16",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 16
+  },
+  {
+    "text": "About this course•Someprerequisitemodules:•COMP7015 Artificial Intelligence •COMP7025 Artificial Intelligence for Digital Transformation•COMP3117 Applied Artificial Intelligence•OrotherAI-relatedcourses•Youareexpectedtoknowthingslike:•Whatisagenerativemodel•WhatisaTransformer•WhatisSoftmax•WhatisTransferLearning,etc. 17",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 17
+  },
+  {
+    "text": "Aboutthiscourse•Prompt Engineering is an emerging, fast-evolving field, and this is a new course•Youarepioneers\n🚀•We may adjust topics,pacing,orthestructureofthecourse based on progress and feedback.•A small amount of material in the first few lectures may overlap with COMP7015\n18",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 18
+  },
+  {
+    "text": "CourseSchedule:Lectures•EveryFriday,from11:30–13:20,@WLB104.•Except20thFeb(CNYHoliday)and3rdApr(EasterHoliday)•27thFeb:In-classquiz@WLB104•24thApr:Groupprojectpresentation•The lecture scheduled for 6th February will be delivered via Zoom,becauseWLB104 will be used for the university’s 70th anniversary events. The details will be announced on Moodle due course.\n19",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 19
+  },
+  {
+    "text": "CourseSchedule:LabSessions•EveryMonday,from13:30–14:20,@FSC801CD&FSC901CD.•Except16thFeb(CNYHoliday)and6thApr(EasterHoliday)•23rdFeb&20thApr:Q&Asessions(Optional)•Apartfromtheintroductionsessiontoday,therewillbe10labsessionsintotal,coveringfromTopic1toTopic10.\n20",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 20
+  },
+  {
+    "text": "CourseContent•11Topicsintotal•PartI:Prompt Engineering and GenAI Fundamentals•About“Whatisit”•Topic1~3•PartII:Core Prompt Engineering Techniques•About“Howitworks”and“Howtoutilizeit”•Topic4~9•PartIII:BeyondthePromptEngineering•Topic10~11 21",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 21
+  },
+  {
+    "text": "Assessment•20%:•Labsheets* 10,2marksforeach•Submitafterthecorrespondinglabsessions•Itisanassessmentonyourengagementofthecourse•30%:•10%-In-classquiz(27thFeb)•Similarformatwiththequizzesin7015and7180•20%-Groupproject•Detailswillbeannouncedafterthequiz•50%:Finalexamination22",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 22
+  },
+  {
+    "text": "Instructor•Dr.ShichaoMa•BSc, MSc, PhD•Research Interest:•Deep learning•Digital Health•Artificial Intelligence in Medicine•Biomedical Data Science•Office: DLB 804•Email: shichaoma@hkbu.edu.hk\nPrompt:Transform the provided photo into a photorealistic corporate headshot in the distinct style of Apple leadership portraits. The subject should have a confident and approachable expression with a subtle, knowing smile.",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 23
+  },
+  {
+    "text": "roachable expression with a subtle, knowing smile. The lighting should be soft and professional, mimicking studio quality with a gentle key light from the side and soft fill light to minimize harsh shadows. The background should be a clean, minimalist, and slightly out-of-focus light gray or off-white wall. The composition should be a classic head-and-shoulders shot with the subject looking directly into the camera. The attire should be a simple, high-quality dark-colored crewneck sweater.",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 23
+  },
+  {
+    "text": "imple, high-quality dark-colored crewneck sweater. The overall aesthetic must be clean, modern, sharp, and high-resolution.\nAI generated with the prompt on the right. 23",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 23
+  },
+  {
+    "text": "TeachingAssistants•Mr.ChenxiLiu•Email:cscxliu@comp.hkbu.edu.hk•Mr.RuofeiWang•Email:csrfwang@comp.hkbu.edu.hk\n24",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 24
+  },
+  {
+    "text": "PromptEngineeringforGenerativeAICOMP4146/7125 Prompt Engineering for Generative AI, Semester 2, 2025/26Dr. Shichao Ma\n25",
+    "source": "COMP7125Topic 0_General Introduction.pdf",
+    "page": 25
+  },
+  {
     "text": "1 \n \nTitle (Units): COMP7520 Foundations of Management in the IT Context (3,3,0) \n \nCourse Aims: This course aims to provide the foundation concepts of information technology \nmanagement and its impacts on organizations. By studying this course, students \nwill develop the knowledge and skills to effectively manage IT resources and \nenable digital transformation to meet business needs. Students will explore topics \nincluding strategic planning, digital business models, project management, and",
     "source": "COMP7520 syllabui.pdf",
     "page": 1

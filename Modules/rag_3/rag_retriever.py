@@ -15,6 +15,10 @@ from pypdf import PdfReader
 # Lexical retrieval
 from rank_bm25 import BM25Okapi
 
+# embedding retrieval
+from sentence_transformers import SentenceTransformer
+import numpy as np
+
 
 class HKBURetriever:
     """HKBU Study Companion Retriever"""
@@ -31,6 +35,9 @@ class HKBURetriever:
         self.processed_folder = processed_folder
         self.chunks = []  # Store all text chunks [{text, source, page}]
         self.bm25 = None  # BM25 retriever
+        self.embedding_model = None  # embedding retriever
+        self.chunk_embeddings = None
+
         
         # Create processed folder if not exists
         os.makedirs(processed_folder, exist_ok=True)
@@ -168,6 +175,9 @@ class HKBURetriever:
         
         # Build BM25 index
         self.build_bm25_index()
+
+        # Build Embedding Model
+        self.build_embedding_model()
         
     def save_index(self):
         """Save chunk index to JSON file"""
@@ -185,6 +195,9 @@ class HKBURetriever:
         
         # Build BM25 index
         self.build_bm25_index()
+
+        # Build Embedding Model
+        self.build_embedding_model()
     
     def build_bm25_index(self):
         """Build BM25 (lexical retrieval) index"""
@@ -196,6 +209,17 @@ class HKBURetriever:
         tokenized_chunks = [chunk["text"].split() for chunk in self.chunks]
         self.bm25 = BM25Okapi(tokenized_chunks)
         print(f"  BM25 index built ({len(self.chunks)} chunks)")
+    
+    def build_embedding_model(self):
+        print("Loading embedding model (first time will download ~100MB)...")
+        self.embedding_model = SentenceTransformer('BAAI/bge-small-zh-v1.5')
+        print("✅ Model loaded successfully")
+
+        # Generate embeddings for all chunks
+        print(f"Generating embeddings for {len(self.chunks)} chunks (may take 1-2 minutes)...")
+        chunk_texts = [chunk["text"] for chunk in self.chunks]
+        self.chunk_embeddings = self.embedding_model.encode(chunk_texts, show_progress_bar=True)
+        print(f"✅ Embeddings generated, shape: {self.chunk_embeddings.shape}")
     
     def lexical_search(self, query: str, top_k: int = 3) -> List[Dict]:
         """
@@ -220,7 +244,6 @@ class HKBURetriever:
         
         # Get top_k results
         top_indices = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:top_k]
-        
         results = []
         for idx in top_indices:
             if scores[idx] > 0:
@@ -229,8 +252,27 @@ class HKBURetriever:
                 results.append(result)
         
         return results
+
+    def neural_search(self, query, top_k=3):
+        """Neural search using vector similarity"""
+        if self.embedding_model is None:
+            print("Embedding model not initialized. Please call build_embeddings() first")
+            return []
+        if self.chunk_embeddings is None:
+            print("Chunk embeddings not generated. Please call build_embeddings() first")
+            return []
+        query_embedding = self.embedding_model.encode([query])
+        similarities = np.dot(self.chunk_embeddings, query_embedding.T).flatten()
+        top_indices = np.argsort(similarities)[::-1][:top_k]
+
+        results = []
+        for idx in top_indices:
+            result = self.chunks[idx].copy()
+            result["score"] = float(similarities[idx])
+            results.append(result)
+        return results
     
-    def retrieve(self, query: str, top_k: int = 3) -> Tuple[List[Dict], Dict]:
+    def retrieve(self, query: str, top_k: int = 3, use_embedding_retrieval: bool = False) -> Tuple[List[Dict], Dict]:
         """
         Unified retrieval interface (lexical only for now)
         
@@ -241,12 +283,31 @@ class HKBURetriever:
         Returns:
             (List of results, Statistics dict)
         """
-        results = self.lexical_search(query, top_k)
+        # Extract course code from query (e.g., COMP7125, COMP7025)
+        course_pattern = r'\b([A-Z]{2,4}[-\s]?[0-9]{4})\b'
+        course_match = re.search(course_pattern, query.upper())
+        target_course = course_match.group(1).replace(" ", "") if course_match else None
+        
+        # Retrieve more candidates for filtering (2x top_k)
+        expanded_k = top_k * 2 if target_course else top_k
+        
+        if use_embedding_retrieval:
+            results = self.neural_search(query, top_k=expanded_k)
+        else:
+            results = self.lexical_search(query, top_k=expanded_k)
+        
+        # Filter and reorder by course code if specified
+        if target_course and results:
+            matched = [r for r in results if target_course.lower() in r["source"].lower()]
+            unmatched = [r for r in results if target_course.lower() not in r["source"].lower()]
+            results = (matched + unmatched)[:expanded_k]
         
         stats = {
-            "method": "Lexical Retrieval (BM25)",
+            "method": "Lexical Retrieval (BM25)" if not use_embedding_retrieval else "Neural Retrieval (Embedding)",
             "num_results": len(results),
-            "query": query
+            "query": query,
+            "target_course": target_course,
+            "matched_count": len(matched) if target_course and results else 0
         }
         
         return results, stats
@@ -287,58 +348,58 @@ class HKBURetriever:
         """
         return len(text) // 2
 
-def compare_token_usage(self, query: str) -> dict:
-        """
-        Compare token usage between no-RAG and RAG approaches
-        For experiment section in report
-        """
-        # 1. no RAG's prompt（only questions）
-        prompt_no_rag = f"Question: {query}"
-        tokens_no_rag = len(prompt_no_rag) // 2
-        
-        # 2. has RAG's prompt（questions + retrives）
-        results, _ = self.retrieve(query, top_k=3)
-        context = self.format_context_with_citations(results)
-        prompt_with_rag = f"Context:\n{context}\n\nQuestion: {query}"
-        tokens_with_rag = len(prompt_with_rag) // 2
-        
-        return {
-            "query": query,
-            "no_rag_tokens": tokens_no_rag,
-            "with_rag_tokens": tokens_with_rag,
-            "extra_tokens_used": tokens_with_rag - tokens_no_rag,
-            "num_chunks_retrieved": len(results)
-        }
+    def compare_token_usage(self, query: str) -> dict:
+            """
+            Compare token usage between no-RAG and RAG approaches
+            For experiment section in report
+            """
+            # 1. no RAG's prompt（only questions）
+            prompt_no_rag = f"Question: {query}"
+            tokens_no_rag = len(prompt_no_rag) // 2
+            
+            # 2. has RAG's prompt（questions + retrives）
+            results, _ = self.retrieve(query, top_k=3)
+            context = self.format_context_with_citations(results)
+            prompt_with_rag = f"Context:\n{context}\n\nQuestion: {query}"
+            tokens_with_rag = len(prompt_with_rag) // 2
+            
+            return {
+                "query": query,
+                "no_rag_tokens": tokens_no_rag,
+                "with_rag_tokens": tokens_with_rag,
+                "extra_tokens_used": tokens_with_rag - tokens_no_rag,
+                "num_chunks_retrieved": len(results)
+            }
 
-def run_experiments(self, queries: list) -> list:
-        """
-        Run token comparison experiments on multiple queries
-        """
-        results = []
-        print("\n" + "=" * 50)
-        print("TOKEN EFFICIENCY EXPERIMENTS")
-        print("=" * 50)
-        
-        for query in queries:
-            result = self.compare_token_usage(query)
-            results.append(result)
-            print(f"\nQuery: {query}")
-            print(f"  No-RAG tokens: {result['no_rag_tokens']}")
-            print(f"  With-RAG tokens: {result['with_rag_tokens']}")
-            print(f"  Extra tokens: +{result['extra_tokens_used']}")
-            print(f"  Chunks retrieved: {result['num_chunks_retrieved']}")
-        
-        # print
-        print("\n" + "=" * 50)
-        print("SUMMARY")
-        print("=" * 50)
-        total_no_rag = sum(r['no_rag_tokens'] for r in results)
-        total_with_rag = sum(r['with_rag_tokens'] for r in results)
-        print(f"Total tokens without RAG: {total_no_rag}")
-        print(f"Total tokens with RAG: {total_with_rag}")
-        print(f"Average extra tokens per query: {(total_with_rag - total_no_rag) // len(results)}")
-        
-        return results
+    def run_experiments(self, queries: list) -> list:
+            """
+            Run token comparison experiments on multiple queries
+            """
+            results = []
+            print("\n" + "=" * 50)
+            print("TOKEN EFFICIENCY EXPERIMENTS")
+            print("=" * 50)
+            
+            for query in queries:
+                result = self.compare_token_usage(query)
+                results.append(result)
+                print(f"\nQuery: {query}")
+                print(f"  No-RAG tokens: {result['no_rag_tokens']}")
+                print(f"  With-RAG tokens: {result['with_rag_tokens']}")
+                print(f"  Extra tokens: +{result['extra_tokens_used']}")
+                print(f"  Chunks retrieved: {result['num_chunks_retrieved']}")
+            
+            # print
+            print("\n" + "=" * 50)
+            print("SUMMARY")
+            print("=" * 50)
+            total_no_rag = sum(r['no_rag_tokens'] for r in results)
+            total_with_rag = sum(r['with_rag_tokens'] for r in results)
+            print(f"Total tokens without RAG: {total_no_rag}")
+            print(f"Total tokens with RAG: {total_with_rag}")
+            print(f"Average extra tokens per query: {(total_with_rag - total_no_rag) // len(results)}")
+            
+            return results
 
 # ========== Convenience functions for other members ==========
 
@@ -371,7 +432,7 @@ def init_rag(force_reprocess: bool = False):
     return retriever
 
 
-def retrieve_context(query: str, top_k: int = 3) -> Tuple[str, List[Dict], Dict]:
+def retrieve_context(query: str, top_k: int = 3, use_embedding_retrieval: bool = False) -> Tuple[str, List[Dict], Dict]:
     """
     Retrieve and return formatted context (Called by Member B/D)
     
@@ -383,7 +444,7 @@ def retrieve_context(query: str, top_k: int = 3) -> Tuple[str, List[Dict], Dict]
         (Formatted context string, Raw results list, Statistics dict)
     """
     retriever = get_retriever()
-    results, stats = retriever.retrieve(query, top_k)
+    results, stats = retriever.retrieve(query, top_k, use_embedding_retrieval)
     formatted_context = retriever.format_context_with_citations(results)
     return formatted_context, results, stats
 

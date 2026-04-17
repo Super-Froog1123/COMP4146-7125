@@ -1,5 +1,5 @@
-from Modules.rag_3.rag_retriever import init_rag, retrieve_context
-from Modules.rag_3.prompt_builder import build_user_prompt, build_full_prompt_list
+from ..rag_3.rag_retriever import init_rag, retrieve_context
+from ..rag_3.prompt_builder import build_user_prompt, build_full_prompt_list
 
 class PromptBuilder:
     
@@ -7,6 +7,7 @@ class PromptBuilder:
         init_rag()
 
     def get_full_prompt_list(
+        self,
         question: str,
         context: list = [],
         system_prompt: str = "",
@@ -18,10 +19,7 @@ class PromptBuilder:
         # RAG
         retrieved_context = ''
         if is_search:
-            if not use_embedding_retrieval:
-                retrieved_context, _, _ = retrieve_context(question, top_k=3)
-            else:
-                retrieved_context = ''
+            retrieved_context, _, _ = retrieve_context(question, top_k=3, use_embedding_retrieval=use_embedding_retrieval)
 
         # prompt builder
         user_prompt = build_user_prompt(
