@@ -1,5 +1,5 @@
 <template>
-  <div class="app-layout">
+  <div class="app-layout" :class="{ 'sidebar-collapsed': sidebarCollapsed }">
     <Sidebar
       :conversation-list="conversationList"
       :active-conversation-id="activeConversationId"
@@ -21,16 +21,45 @@
 </template>
 
 <script setup>
-import { computed, onMounted, onUnmounted, ref } from 'vue';
+import { computed, ref, watch, onMounted, onUnmounted } from 'vue';
 import Sidebar from './components/Sidebar.vue';
 import ChatWindow from './components/ChatWindow.vue';
+import { loadConversations, saveConversations, loadActiveId, saveActiveId } from './historyManager.js';
 
-const conversationList = ref([]);
-const activeConversationId = ref('');
+const conversationList = ref(loadConversations());
+const activeConversationId = ref(loadActiveId());
 const loading = ref(false);
 const errorMessage = ref('');
-const conversationCounter = ref(1);
+const conversationCounter = ref(
+  conversationList.value.length > 0
+    ? Math.max(...conversationList.value.map((c) => parseInt(c.title.match(/\d+/)?.[0] || '0'))) + 1
+    : 1
+);
 const sidebarCollapsed = ref(false);
+
+// 小屏时默认折叠，监听窗口变化
+function handleResize() {
+  if (window.innerWidth <= 920) {
+    sidebarCollapsed.value = true;
+  }
+}
+onMounted(() => {
+  handleResize();
+  window.addEventListener('resize', handleResize);
+});
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize);
+});
+
+// 对话列表或激活ID变化时自动保存到 localStorage
+watch(
+  () => [conversationList.value, activeConversationId.value],
+  () => {
+    saveConversations(conversationList.value);
+    saveActiveId(activeConversationId.value);
+  },
+  { deep: true }
+);
 
 const suggestionList = [
   "ITM's teaching syllabus",
@@ -45,6 +74,8 @@ const activeConversation = computed(() => {
 const nowISO = () => new Date().toISOString();
 const generateId = () => `${Date.now()}-${Math.random().toString(16).slice(2)}`;
 const CHAT_API_URL = '/api/ask';
+
+const SYSTEM_PROMPT = '';
 
 
 // createConversation(title: string)：
@@ -77,25 +108,6 @@ function pushMessage(conversation, payload) {
     time: nowISO()
   });
   conversation.updatedAt = nowISO();
-}
-
-// appendMessageContent(conversation: object, messageId: string, token: string)：
-// 向已有消息追加内容，用于流式输出逐 token 更新
-function appendMessageContent(conversation, messageId, token) {
-  const message = conversation.messageList.find((item) => item.id === messageId);
-  if (message) {
-    message.content += token;
-    conversation.updatedAt = nowISO();
-  }
-}
-
-// updateMessageStatus(conversation: object, messageId: string, status: string)：
-// 更新消息状态（sent / error）
-function updateMessageStatus(conversation, messageId, status) {
-  const message = conversation.messageList.find((item) => item.id === messageId);
-  if (message) {
-    message.status = status;
-  }
 }
 
 // createDefaultTitle()：
@@ -141,7 +153,7 @@ function handleSelectConversation(conversationId) {
 }
 
 // handleRemoveConversation(conversationId: string)：
-// 删除会话，列表清空则置空 activeConversationId
+// 删除会话
 function handleRemoveConversation(conversationId) {
   const index = conversationList.value.findIndex((item) => item.id === conversationId);
   if (index === -1) return;
@@ -151,7 +163,6 @@ function handleRemoveConversation(conversationId) {
 
   if (conversationList.value.length === 0) {
     activeConversationId.value = '';
-    errorMessage.value = '';
     return;
   }
 
@@ -162,10 +173,14 @@ function handleRemoveConversation(conversationId) {
   }
 }
 
-function buildRequestPayload(conversation, text, searchMode) {
+function buildRequestPayload(conversation, text, searchMode = false) {
+  const context = [{ role: 'system', content: SYSTEM_PROMPT }];
+  for (const item of conversation.messageList) {
+    context.push({ role: item.role, content: item.content });
+  }
   return {
     question: text,
-    context: 'None',
+    context,
     is_search: searchMode,
     use_neural_retrieval: false
   };
@@ -173,13 +188,11 @@ function buildRequestPayload(conversation, text, searchMode) {
 
 
 
-
-
-
-// requestAssistantReply(conversation, text, onToken)：
-// 向后端发送请求并流式读取回复，每收到一个 token 调用 onToken(token)
-async function requestAssistantReply(conversation, text, onToken, searchMode) {
+// 向后端发送请求并流式读取回复
+async function requestAssistantReply(conversation, text, searchMode = false) {
   const payload = buildRequestPayload(conversation, text, searchMode);
+  console.log('%c[REQUEST] POST /api/ask', 'color: #60a5fa; font-weight: bold');
+  console.log(JSON.stringify(payload, null, 2));
   const response = await fetch(CHAT_API_URL, {
     method: 'POST',
     headers: {
@@ -192,14 +205,23 @@ async function requestAssistantReply(conversation, text, onToken, searchMode) {
     throw new Error(`请求失败: ${response.status}`);
   }
 
-  const reader = response.body.getReader();
-  const decoder = new TextDecoder('utf-8');
+  // 先插入一条空的 assistant 消息
+  const currentId = activeConversationId.value;
+  const targetConversation = getConversationById(currentId);
+  if (!targetConversation) return;
+  pushMessage(targetConversation, {
+    role: 'assistant',
+    content: ''
+  });
+  const assistantMsg = targetConversation.messageList[targetConversation.messageList.length - 1];
 
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
   while (true) {
     const { done, value } = await reader.read();
     if (done) break;
-    const token = decoder.decode(value, { stream: true });
-    onToken(token);
+    const chunk = decoder.decode(value, { stream: true });
+    assistantMsg.content += chunk;
   }
 }
 
@@ -209,10 +231,15 @@ async function requestAssistantReply(conversation, text, onToken, searchMode) {
 
 
 // handleSendMessage(content: string)：
-// 发送主流程（校验/追加/流式回复/loading/错误）
+// 发送主流程（校验/追加/回复/loading/错误）
 async function handleSendMessage(content, searchMode = false) {
   const text = content.trim();
   if (!text || loading.value) return;
+
+  // 列表为空时先自动创建对话
+  if (conversationList.value.length === 0) {
+    handleCreateConversation();
+  }
 
   const currentId = activeConversationId.value;
   const conversation = getConversationById(currentId);
@@ -228,39 +255,17 @@ async function handleSendMessage(content, searchMode = false) {
     conversation.title = createTitleFromFirstMessage(text);
   }
 
-  // 先创建一条空的 assistant 消息，用于流式追加
-  const assistantMessageId = generateId();
-  const targetConversation = getConversationById(currentId);
-  if (!targetConversation) return;
-  targetConversation.messageList.push({
-    id: assistantMessageId,
-    role: 'assistant',
-    content: '',
-    status: 'loading',
-    time: nowISO()
-  });
-  targetConversation.updatedAt = nowISO();
-
   loading.value = true;
   try {
-    await requestAssistantReply(conversation, text, (token) => {
-      const conv = getConversationById(currentId);
-      if (conv) {
-        appendMessageContent(conv, assistantMessageId, token);
-      }
-    }, searchMode);
-    const conv = getConversationById(currentId);
-    if (conv) {
-      updateMessageStatus(conv, assistantMessageId, 'sent');
-    }
+    await requestAssistantReply(conversation, text, searchMode);
   } catch (error) {
-    const conv = getConversationById(currentId);
-    if (conv) {
-      const message = conv.messageList.find((item) => item.id === assistantMessageId);
-      if (message && !message.content) {
-        message.content = 'Sorry, the response failed this time. Please try again.';
-      }
-      updateMessageStatus(conv, assistantMessageId, 'error');
+    const targetConversation = getConversationById(currentId);
+    if (targetConversation) {
+      pushMessage(targetConversation, {
+        role: 'assistant',
+        content: 'Sorry, the response failed this time. Please try again.',
+        status: 'error'
+      });
     }
     errorMessage.value = 'Reply failed, please try again later.';
   } finally {
@@ -269,28 +274,30 @@ async function handleSendMessage(content, searchMode = false) {
 }
 
 ensureConversation();
-
-// 小屏幕时自动折叠侧边栏
-function handleResize() {
-  if (window.innerWidth <= 920) {
-    sidebarCollapsed.value = true;
-  }
-}
-onMounted(() => {
-  handleResize();
-  window.addEventListener('resize', handleResize);
-});
-onUnmounted(() => {
-  window.removeEventListener('resize', handleResize);
-});
 </script>
 
 <style scoped>
 .app-layout {
   display: grid;
-  grid-template-columns: v-bind("sidebarCollapsed ? '48px' : '280px'") 1fr;
+  grid-template-columns: 280px 1fr;
   height: 100vh;
   background: #f4f6fb;
   transition: grid-template-columns 0.2s;
+}
+
+.app-layout.sidebar-collapsed {
+  grid-template-columns: 48px 1fr;
+}
+
+@media (max-width: 920px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .app-layout.sidebar-collapsed {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
 }
 </style>

@@ -19,10 +19,10 @@ class Query(BaseModel):
     is_search: bool = False
     use_neural_retrieval: bool = False
 
-def complete_document(message: str):
+def complete_document(messages: list):
     payload = {
         "model": MODEL,
-        "messages": [message],
+        "messages": messages,
         "stream": True,
         "options": {
             "num_predict": 2048,
@@ -54,7 +54,7 @@ def ask(q: Query):
         search_mode=q.is_search,
         think_mode=False
     )
-    prompt = q.context + user_prompt
+    prompt = q.context + [user_prompt]
     return StreamingResponse(
         complete_document(prompt),
         media_type="text/plain; charset=utf-8"
